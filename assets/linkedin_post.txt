@@ -1,0 +1,46 @@
+
+🧠 Excited to share CORE-Bench - my new LLM reasoning benchmark on Kaggle!
+
+I created a Comprehensive Ordered Reasoning Evaluation (CORE) benchmark to test how well AI models really think.
+
+📊 THE RESULTS ARE IN:
+
+🥇 Top Performers (96.1% accuracy):
+   • Gemini 3 Pro Preview
+   • Gemini 3 Flash Preview  
+   • DeepSeek V3.2
+   • Qwen 3 Next 80B
+
+🥈 Close Behind (94.1% accuracy):
+   • Claude Haiku 4.5
+
+🎯 WHAT CORE-BENCH TESTS:
+
+✅ Logical Deduction (15 problems)
+   Syllogisms, modus ponens, fallacy detection
+
+✅ Mathematical Reasoning (15 problems)
+   Multi-step word problems, percentages, geometry
+
+✅ Causal Reasoning (15 problems)
+   Cause-effect, counterfactuals, correlation vs causation
+
+✅ Analogical Reasoning (6 problems)
+   Pattern completion (A:B :: C:?)
+
+🔍 KEY FINDINGS:
+
+1️⃣ Multi-step planning is a differentiator - Claude Haiku 4.5 struggled with the river crossing puzzle
+
+2️⃣ Reasoning quality evaluation reveals gaps - stricter judge-based criteria caught issues in top models
+
+3️⃣ Core reasoning tasks are becoming saturated - all models aced logic, math, causal, and analogy tasks
+
+💡 This suggests we need HARDER problems to truly differentiate next-gen AI capabilities.
+
+🔗 Try it yourself: kaggle.com/benchmarks/taiwofeyijimi/core-bench
+📂 GitHub: github.com/taiwofeyijimi/core-bench
+
+What reasoning challenges should I add next? 👇
+
+#AI #MachineLearning #LLM #Kaggle #Benchmark #DeepLearning #ArtificialIntelligence #DataScience
