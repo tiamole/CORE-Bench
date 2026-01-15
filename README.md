@@ -4,186 +4,133 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg?style=for-the-badge&logo=python)](https://www.python.org/downloads/)
 
-> **CORE-Bench** evaluates LLM reasoning across four dimensions: logical deduction, mathematical problem-solving, causal analysis, and analogical thinking. 51 curated problems assess systematic reasoning, fallacy avoidance, and structured thinking.
+> **CORE-Bench** evaluates LLM reasoning across four dimensions: logical deduction, mathematical problem-solving, causal analysis, and analogical thinking. 91 curated problems assess systematic reasoning, fallacy avoidance, and structured thinking.
+
+---
 
 ## 📊 Leaderboard Results (January 2026)
 
-| Model | Comprehensive Score | Logical | Math | Causal | Analogy | Planning | Quality |
-|-------|:------------------:|:-------:|:----:|:------:|:-------:|:--------:|:-------:|
-| **Gemini 3 Pro Preview** | **96.08%** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| Model | Score | Logic | Math | Causal | Analogy | Planning | Quality |
+|-------|:-----:|:-----:|:----:|:------:|:-------:|:--------:|:-------:|
 | **Gemini 3 Flash Preview** | **96.08%** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| **DeepSeek V3.2** | **96.08%** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | **Qwen 3 Next 80B** | **96.08%** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Gemini 3 Pro Preview** | **96.08%** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| **DeepSeek V3.2** | **96.08%** | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | **Claude Haiku 4.5** | **94.12%** | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ |
-| Gemini 2.5 Pro | *Pending* | - | - | - | - | - | - |
+
+---
 
 ## 🎯 Benchmark Overview
 
-CORE-Bench is designed to rigorously evaluate the reasoning capabilities of Large Language Models through structured, multi-dimensional testing.
+CORE-Bench rigorously evaluates LLM reasoning capabilities through structured, multi-dimensional testing across **91 problems** in 4 categories.
 
-### Reasoning Dimensions
+### Problem Distribution
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                        CORE-Bench                               │
-├─────────────────┬─────────────────┬─────────────────┬───────────┤
-│   🔍 Logical    │   🔢 Math       │   🔗 Causal     │ 🧩 Analogy│
-│   Deduction     │   Reasoning     │   Reasoning     │ Reasoning │
-│   (15 problems) │   (15 problems) │   (15 problems) │ (6 probs) │
-├─────────────────┴─────────────────┴─────────────────┴───────────┤
-│                    🗺️ Multi-Step Planning                       │
-│                  (River Crossing Puzzle)                        │
-├─────────────────────────────────────────────────────────────────┤
-│                   ⚖️ Reasoning Quality Judge                     │
-│               (Advanced evaluation with criteria)               │
-└─────────────────────────────────────────────────────────────────┘
-```
+| Category | Original | Advanced | Total | Key Concepts |
+|----------|:--------:|:--------:|:-----:|--------------|
+| **Logical Deduction** | 15 | 10 | 25 | Syllogisms, modal logic, quantifier scope |
+| **Math Reasoning** | 15 | 10 | 25 | Optimization, probability, sequences |
+| **Causal Reasoning** | 15 | 10 | 25 | Simpson's paradox, survivorship bias |
+| **Analogical Reasoning** | 6 | 10 | 16 | Complex relationships, antonyms |
 
-### Task Descriptions
+### Evaluation Tasks
 
-| Task | Description | Skills Tested |
-|------|-------------|---------------|
-| **Logical Deduction** | Syllogisms, modus ponens/tollens, fallacy detection | Formal logic, validity assessment |
-| **Math Word Problems** | Multi-step calculations with real-world context | Equation setup, arithmetic, unit handling |
-| **Causal Reasoning** | Cause-effect analysis, counterfactuals | Correlation vs causation, confounding |
-| **Analogical Reasoning** | Pattern completion (A:B :: C:?) | Relationship identification, abstraction |
-| **Multi-Step Planning** | Classic river crossing puzzle | Constraint satisfaction, sequential planning |
-| **Quality Evaluation** | Complex scenario analysis | Logical coherence, step clarity, fallacy avoidance |
+| Task | Description | Difficulty |
+|------|-------------|:----------:|
+| Logical Deduction | Formal logic, syllogisms, fallacy detection | ⭐⭐ |
+| Math Word Problems | Multi-step calculations, real-world context | ⭐⭐ |
+| Causal Reasoning | Cause-effect, counterfactuals, confounding | ⭐⭐ |
+| Analogical Reasoning | Pattern completion (A:B :: C:?) | ⭐⭐ |
+| Multi-Step Planning | Constraint satisfaction (river crossing) | ⭐⭐⭐ |
+| Quality Evaluation | Judge-based reasoning assessment | ⭐⭐⭐⭐ |
 
-## 🏗️ Problem Categories
-
-### 1. Logical Deduction (15 problems)
-Tests formal reasoning patterns including:
-- **Modus Ponens**: If P then Q; P is true → Q is true
-- **Modus Tollens**: If P then Q; Q is false → P is false
-- **Disjunctive Syllogism**: Either A or B; not A → B
-- **Hypothetical Syllogism**: If A then B; If B then C → If A then C
-- **Fallacy Detection**: Affirming the consequent, denying the antecedent, existential fallacy
-
-### 2. Mathematical Reasoning (15 problems)
-Real-world math scenarios including:
-- Percentage calculations and discounts
-- Work-rate problems
-- Distance/speed/time relationships
-- Ratio and proportion
-- Mixture problems
-- Geometry (area, perimeter)
-- Sequence sums
-
-### 3. Causal Reasoning (15 problems)
-Tests understanding of causality:
-- Causal chain identification
-- Controlled experiment interpretation
-- Correlation vs causation distinction
-- Counterfactual reasoning
-- Confounding variable recognition
-- Selection bias detection
-- Post hoc fallacy identification
-
-### 4. Analogical Reasoning (6 problems)
-Pattern-based reasoning:
-- Professional : Workplace relationships
-- Part : Whole relationships
-- Transformation relationships (juvenile → adult)
-- Instrument : Measurement relationships
-
-## 📈 Key Insights
-
-### Model Performance Analysis
-
-![Performance Chart](assets/performance_comparison.png)
-
-**Key Findings:**
-
-1. **High Ceiling Performance**: Top models achieve 96%+ accuracy, demonstrating strong reasoning capabilities across domains.
-
-2. **Planning Challenge**: Claude Haiku 4.5 struggled with multi-step planning (river crossing puzzle), highlighting constraint satisfaction as a differentiating task.
-
-3. **Quality Evaluation Gap**: Both Gemini 3 Pro and DeepSeek V3.2 failed the reasoning quality evaluation, which uses stricter judge-based criteria.
-
-4. **Consistent Baseline**: All models passed logical, math, causal, and analogical reasoning tasks, suggesting these categories may need harder problems.
-
-### Strengths & Weaknesses by Category
-
-| Category | Easiest For | Most Challenging For |
-|----------|-------------|---------------------|
-| Logical Deduction | All models (100%) | N/A |
-| Math Reasoning | All models (100%) | N/A |
-| Causal Reasoning | All models (100%) | N/A |
-| Analogical Reasoning | All models (100%) | N/A |
-| Multi-Step Planning | 4/5 models | Claude Haiku 4.5 |
-| Quality Evaluation | 3/5 models | Gemini 3 Pro, DeepSeek V3.2 |
-
-## 🚀 Quick Start
-
-### Running the Benchmark Locally
-
-```python
-import kaggle_benchmarks as kbench
-
-# Run the comprehensive benchmark
-from reasoning_benchmark import comprehensive_reasoning_benchmark
-
-result = comprehensive_reasoning_benchmark.run(
-    llm=kbench.llm,
-    df=combined_dataset
-)
-
-print(f"Accuracy: {result[0]:.2%}")
-```
-
-### Evaluating Your Own Model
-
-```bash
-# Clone the repository
-git clone https://github.com/taiwofeyijimi/core-bench.git
-cd core-bench
-
-# Install dependencies
-pip install kaggle-benchmarks pandas
-
-# Run evaluation
-python evaluate.py --model your_model_name
-```
+---
 
 ## 📁 Repository Structure
 
 ```
-core-bench/
-├── README.md                      # This file
-├── reasoning_benchmark.ipynb      # Main benchmark notebook
-├── analysis/
-│   ├── core_bench_analysis.ipynb  # Visualization & insights
-│   └── leaderboard.json           # Latest leaderboard data
-├── assets/
-│   ├── performance_comparison.png
-│   ├── radar_chart.png
-│   ├── task_breakdown.png
-│   └── core_bench_banner.png
-└── data/
-    ├── logic_problems.csv
-    ├── math_problems.csv
-    ├── causal_problems.csv
-    └── analogy_problems.csv
+CORE-Bench/
+├── reasoning_benchmark.ipynb              # Main benchmark (Kaggle compatible)
+├── core_bench_publication_analysis.ipynb  # Analysis & visualization
+├── leaderboard.json                       # Latest results data
+├── publication_figures/                   # High-resolution figures
+│   ├── png/                               # 300 DPI PNG images
+│   ├── svg/                               # Vector graphics
+│   └── pdf/                               # PDF for publications
+├── README.md
+└── LICENSE
 ```
 
-## 🔬 Methodology
+---
 
-### Evaluation Criteria
+## 🚀 Quick Start
 
-1. **Accuracy**: Correct answer matching (exact or fuzzy)
-2. **Reasoning Quality**: Judge LLM evaluation of explanation clarity
-3. **Constraint Satisfaction**: Valid solutions for planning tasks
+### Run on Kaggle
+Visit the [CORE-Bench on Kaggle](https://www.kaggle.com/benchmarks/taiwofeyijimi/core-bench) to evaluate models directly.
 
-### Scoring
+### Run Locally
 
-- **Boolean Tasks**: Pass (✅) / Fail (❌)
-- **Comprehensive Benchmark**: Accuracy percentage (0-100%)
-- **Quality Evaluation**: Criteria-based assessment (6 criteria)
+```bash
+# Clone the repository
+git clone https://github.com/tiamole/CORE-Bench.git
+cd CORE-Bench
+
+# Install dependencies
+pip install pandas numpy matplotlib seaborn
+
+# Open the benchmark notebook
+jupyter notebook reasoning_benchmark.ipynb
+```
+
+---
+
+## 📈 Key Findings
+
+1. **Two Perfect Performers**: Gemini 3 Flash and Qwen 3 Next 80B passed all 6 evaluation tasks
+2. **Quality Evaluation Challenge**: 40% of models failed this meta-reasoning task
+3. **Planning Differentiation**: Multi-step planning separated Claude Haiku from top performers
+4. **Core Reasoning Mastery**: 100% pass rate on logical, math, causal, and analogical tasks
+
+---
+
+## 🔬 Advanced Problem Concepts
+
+### Logical Deduction
+- Biconditional reasoning
+- Nested conditionals
+- Constructive/destructive dilemmas
+- Sorites chains
+- Modal logic
+
+### Mathematical Reasoning  
+- Optimization problems
+- Probability calculations
+- Exponential growth
+- Permutations/combinations
+- Logarithmic operations
+
+### Causal Reasoning
+- Simpson's paradox
+- Survivorship bias
+- Berkson's paradox
+- Instrumental variables
+- Ecological fallacy
+
+### Analogical Reasoning
+- Complex relationship mappings
+- Multi-attribute analogies
+- Antonym pairs
+- Process analogies
+
+---
+
+## 📊 Visualization
+
+![CORE-Bench Dashboard](publication_figures/png/fig6_dashboard.png)
+
+---
 
 ## 📜 Citation
-
-If you use CORE-Bench in your research, please cite:
 
 ```bibtex
 @misc{core-bench-2026,
@@ -195,44 +142,35 @@ If you use CORE-Bench in your research, please cite:
 }
 ```
 
+---
+
 ## 🤝 Contributing
 
-Contributions are welcome! Areas for improvement:
+Contributions welcome! Areas for improvement:
 
-1. **More Problems**: Add challenging problems to each category
-2. **New Categories**: Spatial reasoning, temporal reasoning, etc.
-3. **Harder Variants**: Multi-hop reasoning, adversarial examples
-4. **Better Metrics**: Fine-grained scoring, partial credit
+- **Add Problems**: Submit challenging reasoning problems via pull request
+- **New Categories**: Spatial reasoning, temporal reasoning, common sense
+- **Harder Variants**: Multi-hop reasoning, adversarial examples
 
-### Submitting Problems
+### Problem Submission Format
 
 ```python
-# Example problem format
-new_problem = {
+{
     "premises": "Your premises here",
-    "question": "Your question here",
+    "question": "Your question here", 
     "answer": "expected_answer",
-    "explanation": "Why this is correct"
+    "reasoning_type": "category_label"
 }
 ```
 
+---
+
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- [Kaggle Benchmarks](https://www.kaggle.com/benchmarks) for the evaluation platform
-- The AI research community for advancing reasoning capabilities
+MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
 <p align="center">
-  <strong>Built with 🧠 for the AI reasoning research community</strong>
-</p>
-
-<p align="center">
-  <a href="https://www.kaggle.com/benchmarks/taiwofeyijimi/core-bench">View on Kaggle</a> •
-  <a href="https://github.com/taiwofeyijimi/core-bench/issues">Report Bug</a> •
-  <a href="https://github.com/taiwofeyijimi/core-bench/issues">Request Feature</a>
+  <strong>Built for the AI reasoning research community</strong>
 </p>
