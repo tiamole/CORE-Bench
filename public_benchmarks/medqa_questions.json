@@ -1,0 +1,297 @@
+{
+  "benchmark": "MedQA",
+  "description": "Medical Question Answering - USMLE-style clinical reasoning",
+  "source": "Jin et al. (Nature Scientific Data 2021)",
+  "tier_a": {
+    "name": "Basic",
+    "description": "Single-concept medical knowledge recall and application",
+    "questions": [
+      {
+        "id": "MEDQA_A01",
+        "question": "A patient presents with excessive thirst, frequent urination, and unexplained weight loss. Which hormone is most likely deficient or ineffective?\n(A) Cortisol\n(B) Insulin\n(C) Thyroid hormone\n(D) Growth hormone",
+        "answer": "B",
+        "reasoning_type": "symptom_hormone_association",
+        "topic": "endocrinology"
+      },
+      {
+        "id": "MEDQA_A02",
+        "question": "Which organ is primarily responsible for filtering blood and producing urine?\n(A) Liver\n(B) Kidney\n(C) Pancreas\n(D) Spleen",
+        "answer": "B",
+        "reasoning_type": "organ_function",
+        "topic": "anatomy"
+      },
+      {
+        "id": "MEDQA_A03",
+        "question": "A patient with a bacterial infection is prescribed an antibiotic. Which of the following would NOT be treated effectively with antibiotics?\n(A) Strep throat\n(B) Urinary tract infection\n(C) Influenza\n(D) Bacterial pneumonia",
+        "answer": "C",
+        "reasoning_type": "treatment_selection",
+        "topic": "infectious_disease"
+      },
+      {
+        "id": "MEDQA_A04",
+        "question": "Normal human body temperature is approximately:\n(A) 95°F (35°C)\n(B) 98.6°F (37°C)\n(C) 102°F (39°C)\n(D) 104°F (40°C)",
+        "answer": "B",
+        "reasoning_type": "vital_signs",
+        "topic": "physiology"
+      },
+      {
+        "id": "MEDQA_A05",
+        "question": "Which blood type is considered the universal donor for red blood cells?\n(A) A\n(B) B\n(C) AB\n(D) O",
+        "answer": "D",
+        "reasoning_type": "blood_typing",
+        "topic": "hematology"
+      },
+      {
+        "id": "MEDQA_A06",
+        "question": "A vitamin C deficiency leads to which condition?\n(A) Rickets\n(B) Scurvy\n(C) Beriberi\n(D) Pellagra",
+        "answer": "B",
+        "reasoning_type": "vitamin_deficiency",
+        "topic": "nutrition"
+      },
+      {
+        "id": "MEDQA_A07",
+        "question": "The normal resting heart rate for adults is:\n(A) 20-40 beats per minute\n(B) 60-100 beats per minute\n(C) 120-150 beats per minute\n(D) 150-200 beats per minute",
+        "answer": "B",
+        "reasoning_type": "normal_values",
+        "topic": "cardiology"
+      },
+      {
+        "id": "MEDQA_A08",
+        "question": "Which type of blood vessel carries blood away from the heart?\n(A) Vein\n(B) Capillary\n(C) Artery\n(D) Venule",
+        "answer": "C",
+        "reasoning_type": "vascular_anatomy",
+        "topic": "cardiovascular"
+      },
+      {
+        "id": "MEDQA_A09",
+        "question": "A patient with chest pain is given aspirin. What is the primary mechanism of aspirin's benefit in heart attacks?\n(A) Pain relief\n(B) Blood thinning (antiplatelet effect)\n(C) Reducing fever\n(D) Lowering cholesterol",
+        "answer": "B",
+        "reasoning_type": "drug_mechanism",
+        "topic": "pharmacology"
+      },
+      {
+        "id": "MEDQA_A10",
+        "question": "The primary function of red blood cells is to:\n(A) Fight infection\n(B) Carry oxygen\n(C) Clot blood\n(D) Produce antibodies",
+        "answer": "B",
+        "reasoning_type": "cell_function",
+        "topic": "hematology"
+      },
+      {
+        "id": "MEDQA_A11",
+        "question": "A patient has a severe peanut allergy. Accidental exposure could cause:\n(A) Type 1 diabetes\n(B) Anaphylaxis\n(C) Appendicitis\n(D) Gout",
+        "answer": "B",
+        "reasoning_type": "allergic_reaction",
+        "topic": "immunology"
+      },
+      {
+        "id": "MEDQA_A12",
+        "question": "Which organ produces bile?\n(A) Stomach\n(B) Pancreas\n(C) Liver\n(D) Gallbladder",
+        "answer": "C",
+        "reasoning_type": "digestive_physiology",
+        "topic": "gastroenterology"
+      },
+      {
+        "id": "MEDQA_A13",
+        "question": "A bone fracture where the bone pierces the skin is called:\n(A) Closed fracture\n(B) Open (compound) fracture\n(C) Hairline fracture\n(D) Stress fracture",
+        "answer": "B",
+        "reasoning_type": "terminology",
+        "topic": "orthopedics"
+      },
+      {
+        "id": "MEDQA_A14",
+        "question": "CPR (cardiopulmonary resuscitation) involves chest compressions and:\n(A) Leg elevation\n(B) Rescue breaths\n(C) Tourniquet application\n(D) Ice application",
+        "answer": "B",
+        "reasoning_type": "emergency_procedures",
+        "topic": "emergency_medicine"
+      },
+      {
+        "id": "MEDQA_A15",
+        "question": "Which neurotransmitter is primarily associated with the 'fight or flight' response?\n(A) Serotonin\n(B) Dopamine\n(C) Epinephrine (adrenaline)\n(D) Acetylcholine",
+        "answer": "C",
+        "reasoning_type": "neurotransmitter_function",
+        "topic": "neuroscience"
+      },
+      {
+        "id": "MEDQA_A16",
+        "question": "A patient with type 2 diabetes is typically treated initially with:\n(A) Insulin injections\n(B) Oral medications and lifestyle changes\n(C) Surgery\n(D) Dialysis",
+        "answer": "B",
+        "reasoning_type": "treatment_protocol",
+        "topic": "endocrinology"
+      },
+      {
+        "id": "MEDQA_A17",
+        "question": "The Heimlich maneuver is used to treat:\n(A) Heart attack\n(B) Choking\n(C) Seizure\n(D) Stroke",
+        "answer": "B",
+        "reasoning_type": "first_aid",
+        "topic": "emergency_medicine"
+      },
+      {
+        "id": "MEDQA_A18",
+        "question": "Which vaccine is typically given to infants to prevent whooping cough?\n(A) MMR\n(B) DTaP\n(C) Polio\n(D) Hepatitis A",
+        "answer": "B",
+        "reasoning_type": "immunization",
+        "topic": "pediatrics"
+      },
+      {
+        "id": "MEDQA_A19",
+        "question": "Normal blood pressure for a healthy adult is approximately:\n(A) 80/50 mmHg\n(B) 120/80 mmHg\n(C) 160/100 mmHg\n(D) 200/120 mmHg",
+        "answer": "B",
+        "reasoning_type": "vital_signs",
+        "topic": "cardiology"
+      },
+      {
+        "id": "MEDQA_A20",
+        "question": "A deficiency of iron commonly leads to:\n(A) Osteoporosis\n(B) Anemia\n(C) Diabetes\n(D) Hypertension",
+        "answer": "B",
+        "reasoning_type": "mineral_deficiency",
+        "topic": "hematology"
+      }
+    ]
+  },
+  "tier_b": {
+    "name": "Advanced",
+    "description": "Multi-step clinical reasoning, differential diagnosis, and complex case analysis",
+    "questions": [
+      {
+        "id": "MEDQA_B01",
+        "question": "A 45-year-old man presents with crushing substernal chest pain radiating to his left arm, diaphoresis, and shortness of breath. ECG shows ST-segment elevation in leads V1-V4. What is the most likely diagnosis and immediate treatment?\n(A) Anxiety attack; benzodiazepines\n(B) Anterior STEMI; aspirin, anticoagulation, and emergent PCI\n(C) Gastroesophageal reflux; antacids\n(D) Pulmonary embolism; thrombolytics",
+        "answer": "B",
+        "reasoning_type": "clinical_diagnosis_treatment",
+        "topic": "cardiology"
+      },
+      {
+        "id": "MEDQA_B02",
+        "question": "A 25-year-old woman presents with heat intolerance, weight loss despite increased appetite, tremor, and a palpable thyroid nodule. Labs show low TSH and elevated T4. What is the most likely diagnosis?\n(A) Hypothyroidism\n(B) Graves' disease\n(C) Addison's disease\n(D) Cushing's syndrome",
+        "answer": "B",
+        "reasoning_type": "lab_clinical_correlation",
+        "topic": "endocrinology"
+      },
+      {
+        "id": "MEDQA_B03",
+        "question": "A 60-year-old diabetic patient on metformin requires a contrast CT scan. What is the primary concern regarding his medication?\n(A) Contrast will be ineffective\n(B) Risk of lactic acidosis; metformin should be held\n(C) Increased bleeding risk\n(D) Contrast allergy",
+        "answer": "B",
+        "reasoning_type": "drug_interaction",
+        "topic": "radiology/pharmacology"
+      },
+      {
+        "id": "MEDQA_B04",
+        "question": "A patient on warfarin for atrial fibrillation presents with INR of 8.5 and minor gum bleeding but no major hemorrhage. What is the most appropriate management?\n(A) Continue warfarin at same dose\n(B) Hold warfarin, give vitamin K orally, recheck INR\n(C) Immediate surgery\n(D) Blood transfusion",
+        "answer": "B",
+        "reasoning_type": "anticoagulation_management",
+        "topic": "hematology"
+      },
+      {
+        "id": "MEDQA_B05",
+        "question": "A 55-year-old smoker presents with a new cough, hemoptysis, and weight loss. Chest X-ray shows a hilar mass. What is the most appropriate next step?\n(A) Prescribe antibiotics for pneumonia\n(B) CT chest and bronchoscopy with biopsy\n(C) Reassurance and follow-up in 6 months\n(D) Start chemotherapy immediately",
+        "answer": "B",
+        "reasoning_type": "diagnostic_workup",
+        "topic": "pulmonology/oncology"
+      },
+      {
+        "id": "MEDQA_B06",
+        "question": "A 30-year-old woman with a history of migraines is on combined oral contraceptive pills. She now reports visual aura before her migraines. What should be recommended?\n(A) Continue current contraception\n(B) Discontinue estrogen-containing contraceptives due to stroke risk\n(C) Increase contraceptive dose\n(D) Add aspirin prophylaxis",
+        "answer": "B",
+        "reasoning_type": "contraindication_assessment",
+        "topic": "neurology/gynecology"
+      },
+      {
+        "id": "MEDQA_B07",
+        "question": "A 70-year-old man with BPH is prescribed an alpha-blocker. He should be warned about which common side effect when standing?\n(A) Hyperglycemia\n(B) Orthostatic hypotension\n(C) Increased urinary frequency\n(D) Weight gain",
+        "answer": "B",
+        "reasoning_type": "medication_counseling",
+        "topic": "urology/pharmacology"
+      },
+      {
+        "id": "MEDQA_B08",
+        "question": "A patient with chronic kidney disease stage 4 (GFR 20 mL/min) needs pain management for osteoarthritis. Which medication should be avoided?\n(A) Acetaminophen\n(B) NSAIDs (ibuprofen, naproxen)\n(C) Topical lidocaine\n(D) Low-dose opioids with renal dosing",
+        "answer": "B",
+        "reasoning_type": "renal_dosing",
+        "topic": "nephrology"
+      },
+      {
+        "id": "MEDQA_B09",
+        "question": "A 40-year-old woman presents with fatigue, cold intolerance, constipation, and dry skin. Labs show elevated TSH and low free T4. What is the appropriate treatment?\n(A) Radioactive iodine\n(B) Levothyroxine (synthetic T4)\n(C) Methimazole\n(D) Surgical thyroidectomy",
+        "answer": "B",
+        "reasoning_type": "hormone_replacement",
+        "topic": "endocrinology"
+      },
+      {
+        "id": "MEDQA_B10",
+        "question": "A child presents with barking cough, stridor, and respiratory distress that worsens at night. What is the most likely diagnosis?\n(A) Asthma\n(B) Croup (laryngotracheobronchitis)\n(C) Pneumonia\n(D) Foreign body aspiration",
+        "answer": "B",
+        "reasoning_type": "pediatric_diagnosis",
+        "topic": "pediatrics"
+      },
+      {
+        "id": "MEDQA_B11",
+        "question": "A 65-year-old man with atrial fibrillation and a CHA2DS2-VASc score of 4 asks about stroke prevention. What is the recommended therapy?\n(A) Aspirin alone\n(B) Anticoagulation (warfarin or DOAC)\n(C) No treatment needed\n(D) Cardioversion",
+        "answer": "B",
+        "reasoning_type": "risk_stratification",
+        "topic": "cardiology"
+      },
+      {
+        "id": "MEDQA_B12",
+        "question": "A patient presents with sudden severe headache described as 'the worst headache of my life.' CT head is negative. What is the next appropriate step?\n(A) Discharge with migraine medications\n(B) Lumbar puncture to rule out subarachnoid hemorrhage\n(C) MRI brain in 2 weeks\n(D) Start antibiotics for meningitis",
+        "answer": "B",
+        "reasoning_type": "emergency_workup",
+        "topic": "neurology"
+      },
+      {
+        "id": "MEDQA_B13",
+        "question": "A 50-year-old man with liver cirrhosis presents with confusion and asterixis. Ammonia level is elevated. What is the diagnosis and treatment?\n(A) Delirium tremens; benzodiazepines\n(B) Hepatic encephalopathy; lactulose\n(C) Wernicke's encephalopathy; thiamine\n(D) Meningitis; antibiotics",
+        "answer": "B",
+        "reasoning_type": "syndrome_recognition",
+        "topic": "gastroenterology"
+      },
+      {
+        "id": "MEDQA_B14",
+        "question": "A patient with rheumatoid arthritis on methotrexate develops mouth ulcers and pancytopenia. What medication should have been co-prescribed to prevent this?\n(A) Vitamin D\n(B) Folic acid\n(C) Calcium\n(D) Iron",
+        "answer": "B",
+        "reasoning_type": "preventive_treatment",
+        "topic": "rheumatology"
+      },
+      {
+        "id": "MEDQA_B15",
+        "question": "A 28-year-old pregnant woman at 30 weeks gestation presents with new-onset hypertension (160/100) and proteinuria. What is the diagnosis?\n(A) Chronic hypertension\n(B) Preeclampsia\n(C) Gestational diabetes\n(D) HELLP syndrome",
+        "answer": "B",
+        "reasoning_type": "obstetric_emergency",
+        "topic": "obstetrics"
+      },
+      {
+        "id": "MEDQA_B16",
+        "question": "A patient on SSRIs for depression wants to take St. John's Wort. What is your advice?\n(A) Safe to combine\n(B) Avoid due to risk of serotonin syndrome\n(C) Take them 12 hours apart\n(D) St. John's Wort is more effective",
+        "answer": "B",
+        "reasoning_type": "herb_drug_interaction",
+        "topic": "psychiatry"
+      },
+      {
+        "id": "MEDQA_B17",
+        "question": "A 35-year-old IV drug user presents with fever, new heart murmur, and splinter hemorrhages. Blood cultures grow Staphylococcus aureus. What is the most likely diagnosis?\n(A) Rheumatic heart disease\n(B) Infective endocarditis\n(C) Viral myocarditis\n(D) Pericarditis",
+        "answer": "B",
+        "reasoning_type": "clinical_triad",
+        "topic": "infectious_disease/cardiology"
+      },
+      {
+        "id": "MEDQA_B18",
+        "question": "A patient being treated for tuberculosis develops orange-colored urine. Which medication is responsible?\n(A) Isoniazid\n(B) Rifampin\n(C) Ethambutol\n(D) Pyrazinamide",
+        "answer": "B",
+        "reasoning_type": "side_effect_identification",
+        "topic": "infectious_disease"
+      },
+      {
+        "id": "MEDQA_B19",
+        "question": "A 22-year-old woman presents with recurrent episodes of palpitations, sweating, and anxiety lasting 15-20 minutes. Blood pressure during an episode is 200/120, but normal between episodes. What should be suspected?\n(A) Panic disorder\n(B) Pheochromocytoma\n(C) Hyperthyroidism\n(D) Essential hypertension",
+        "answer": "B",
+        "reasoning_type": "paroxysmal_syndrome",
+        "topic": "endocrinology"
+      },
+      {
+        "id": "MEDQA_B20",
+        "question": "A patient with a penicillin allergy (anaphylaxis) requires treatment for bacterial meningitis. What is the best antibiotic choice?\n(A) Amoxicillin\n(B) Chloramphenicol or meropenem with caution\n(C) Cephalexin\n(D) Ampicillin-sulbactam",
+        "answer": "B",
+        "reasoning_type": "allergy_consideration",
+        "topic": "infectious_disease"
+      }
+    ]
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "benchmark_suite": "CORE-Bench Comprehensive Reasoning Evaluation",
+  "version": "2.0",
+  "author": "Taiwo Feyijimi",
+  "institution": "University of Georgia",
+  "created": "January 2026",
+  "description": "A comprehensive benchmark suite combining CORE-Bench with 7 public benchmark datasets for rigorous LLM reasoning evaluation",
+  "total_questions": 320,
+  "structure": {
+    "tier_a_basic": {
+      "description": "Foundational reasoning tasks requiring 1-3 step inference",
+      "questions_per_benchmark": 20,
+      "total": 160
+    },
+    "tier_b_advanced": {
+      "description": "Expert-level reasoning requiring multi-step inference, specialized knowledge, or complex pattern recognition",
+      "questions_per_benchmark": 20,
+      "total": 160
+    }
+  },
+  "benchmarks": [
+    {
+      "name": "CORE-Bench",
+      "file": "core_bench_questions.json",
+      "category": "primary",
+      "description": "Comprehensive Ordered Reasoning Evaluation across logical, mathematical, causal, and analogical dimensions",
+      "source": "Feyijimi (NeurIPS 2025)",
+      "reasoning_types": ["logical_deduction", "math_reasoning", "causal_reasoning", "analogical_reasoning", "multi_step_planning"],
+      "tier_a_count": 20,
+      "tier_b_count": 20
+    },
+    {
+      "name": "GSM8K",
+      "file": "gsm8k_questions.json",
+      "category": "public_mathematical",
+      "description": "Grade School Math 8K - Multi-step arithmetic word problems",
+      "source": "Cobbe et al. (2021)",
+      "reasoning_types": ["arithmetic", "word_problems", "multi_step_calculation"],
+      "tier_a_count": 20,
+      "tier_b_count": 20
+    },
+    {
+      "name": "MATH",
+      "file": "math_questions.json",
+      "category": "public_mathematical",
+      "description": "Competition Mathematics - AMC/AIME level problems",
+      "source": "Hendrycks et al. (NeurIPS 2021)",
+      "reasoning_types": ["algebra", "number_theory", "geometry", "combinatorics", "probability"],
+      "tier_a_count": 20,
+      "tier_b_count": 20
+    },
+    {
+      "name": "BIG-Bench",
+      "file": "bigbench_questions.json",
+      "category": "public_logical",
+      "description": "Beyond the Imitation Game - State tracking and logical deduction",
+      "source": "Srivastava et al. (TMLR 2023)",
+      "reasoning_types": ["state_tracking", "logical_deduction", "object_counting", "spatial_reasoning"],
+      "tier_a_count": 20,
+      "tier_b_count": 20
+    },
+    {
+      "name": "LogiQA",
+      "file": "logiqa_questions.json",
+      "category": "public_logical",
+      "description": "Logical Question Answering from standardized tests",
+      "source": "Liu et al. (IJCAI 2020)",
+      "reasoning_types": ["categorical_syllogism", "conditional_reasoning", "argument_evaluation", "paradox_resolution"],
+      "tier_a_count": 20,
+      "tier_b_count": 20
+    },
+    {
+      "name": "ReClor",
+      "file": "reclor_questions.json",
+      "category": "public_reading_comprehension",
+      "description": "Reading Comprehension for Logical Reasoning - GMAT/LSAT style",
+      "source": "Yu et al. (ICLR 2020)",
+      "reasoning_types": ["assumption_identification", "argument_evaluation", "causal_reasoning", "statistical_reasoning"],
+      "tier_a_count": 20,
+      "tier_b_count": 20
+    },
+    {
+      "name": "StrategyQA",
+      "file": "strategyqa_questions.json",
+      "category": "public_commonsense",
+      "description": "Strategy Question Answering - Multi-hop implicit reasoning",
+      "source": "Geva et al. (TACL 2021)",
+      "reasoning_types": ["multi_hop_reasoning", "world_knowledge_integration", "implicit_decomposition"],
+      "tier_a_count": 20,
+      "tier_b_count": 20
+    },
+    {
+      "name": "MedQA",
+      "file": "medqa_questions.json",
+      "category": "public_domain_specific",
+      "description": "Medical Question Answering - USMLE-style clinical reasoning",
+      "source": "Jin et al. (Nature Scientific Data 2021)",
+      "reasoning_types": ["clinical_diagnosis", "treatment_selection", "drug_interaction", "pathophysiology"],
+      "tier_a_count": 20,
+      "tier_b_count": 20
+    }
+  ],
+  "evaluation_metrics": {
+    "primary": "accuracy",
+    "per_tier": true,
+    "per_benchmark": true,
+    "aggregate": {
+      "public_benchmark_average": "Mean across 7 public benchmarks",
+      "core_bench_score": "CORE-Bench standalone score",
+      "composite_score": "Weighted average of all 8 benchmarks"
+    }
+  },
+  "usage_notes": {
+    "comparison_methodology": "For fair comparison between CORE-Bench and public benchmarks, use the same 20 Tier A + 20 Tier B format across all datasets",
+    "tier_definitions": {
+      "tier_a": "Basic/Foundational - Questions answerable with 1-3 reasoning steps and general knowledge",
+      "tier_b": "Advanced/Expert - Questions requiring 4+ steps, specialized knowledge, or handling of edge cases/paradoxes"
+    },
+    "statistical_validity": "With 40 questions per benchmark (20 Tier A + 20 Tier B), statistical comparisons have sufficient power for meaningful conclusions"
+  },
+  "file_format": {
+    "structure": {
+      "benchmark": "Name of the benchmark",
+      "description": "Brief description",
+      "source": "Citation",
+      "tier_a": {
+        "name": "Basic",
+        "description": "Tier description",
+        "questions": "[Array of 20 question objects]"
+      },
+      "tier_b": {
+        "name": "Advanced",
+        "description": "Tier description",
+        "questions": "[Array of 20 question objects]"
+      }
+    },
+    "question_object": {
+      "required_fields": ["id", "question", "answer"],
+      "optional_fields": ["reasoning_type", "reasoning_steps", "difficulty", "topic", "category"]
+    }
+  }
+}

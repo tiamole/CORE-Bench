@@ -24,3 +24,19 @@ Thumbs.db
 exploration/
 scratch/
 *.tmp
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.blg
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# Keep these LaTeX files
+!*.bib
+!*.bbl
+!*.tex
+!*.sty
+!*.pdf

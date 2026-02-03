@@ -1,0 +1,257 @@
+{
+  "benchmark": "ReClor",
+  "description": "Reading Comprehension for Logical Reasoning - GMAT/LSAT style",
+  "source": "Yu et al. (ICLR 2020)",
+  "tier_a": {
+    "name": "Basic",
+    "description": "Straightforward inference from evidence",
+    "questions": [
+      {
+        "id": "RECLOR_A01",
+        "question": "Passage: Scientists have found that plants grown in greenhouses produce fewer defensive chemicals than plants grown outdoors. These chemicals protect plants from insects.\nQuestion: The passage most strongly supports which conclusion?\n(A) Greenhouse plants are more vulnerable to insect damage\n(B) Defensive chemicals are harmful to plants\n(C) All outdoor plants produce defensive chemicals\n(D) Greenhouses should not be used for agriculture",
+        "answer": "A",
+        "reasoning_type": "inference_from_evidence"
+      },
+      {
+        "id": "RECLOR_A02",
+        "question": "Passage: Every student who passed the exam studied for at least 10 hours. Maria did not study for 10 hours.\nQuestion: Which of the following must be true?\n(A) Maria passed the exam\n(B) Maria did not pass the exam\n(C) Maria studied more than 10 hours\n(D) The exam was difficult",
+        "answer": "B",
+        "reasoning_type": "deductive_logic"
+      },
+      {
+        "id": "RECLOR_A03",
+        "question": "Passage: Regular exercise improves cardiovascular health. It also reduces stress and improves sleep quality.\nQuestion: Based on the passage, which is a benefit of regular exercise?\n(A) Weight loss\n(B) Improved sleep quality\n(C) Increased appetite\n(D) Better vision",
+        "answer": "B",
+        "reasoning_type": "direct_inference"
+      },
+      {
+        "id": "RECLOR_A04",
+        "question": "Passage: All mammals are warm-blooded. Dolphins are mammals.\nQuestion: What can be concluded about dolphins?\n(A) Dolphins live in water\n(B) Dolphins are warm-blooded\n(C) Dolphins are fish\n(D) Dolphins can breathe underwater",
+        "answer": "B",
+        "reasoning_type": "syllogistic_conclusion"
+      },
+      {
+        "id": "RECLOR_A05",
+        "question": "Passage: The company's profits increased by 20% after implementing the new marketing strategy. Employee morale also improved during this period.\nQuestion: What can be directly concluded from the passage?\n(A) The marketing strategy caused employee morale to improve\n(B) Both profits and morale improved during the same period\n(C) Higher profits always lead to better morale\n(D) The strategy was responsible for all improvements",
+        "answer": "B",
+        "reasoning_type": "careful_inference"
+      },
+      {
+        "id": "RECLOR_A06",
+        "question": "Passage: If a food contains more than 5 grams of fat per serving, it is classified as high-fat. This yogurt contains 3 grams of fat per serving.\nQuestion: How should this yogurt be classified?\n(A) High-fat\n(B) Not high-fat\n(C) Medium-fat\n(D) Cannot be determined",
+        "answer": "B",
+        "reasoning_type": "conditional_application"
+      },
+      {
+        "id": "RECLOR_A07",
+        "question": "Passage: The museum is open from 9 AM to 5 PM on weekdays. On weekends, it is open from 10 AM to 6 PM.\nQuestion: If today is Saturday, when does the museum close?\n(A) 5 PM\n(B) 6 PM\n(C) 9 AM\n(D) 10 AM",
+        "answer": "B",
+        "reasoning_type": "information_retrieval"
+      },
+      {
+        "id": "RECLOR_A08",
+        "question": "Passage: Trees absorb carbon dioxide and release oxygen. Deforestation reduces the number of trees.\nQuestion: What effect does deforestation likely have on carbon dioxide levels?\n(A) Decreases carbon dioxide\n(B) Increases carbon dioxide\n(C) No effect on carbon dioxide\n(D) Depends on the season",
+        "answer": "B",
+        "reasoning_type": "cause_effect_inference"
+      },
+      {
+        "id": "RECLOR_A09",
+        "question": "Passage: Only licensed drivers may operate vehicles on public roads. Tom does not have a license.\nQuestion: Can Tom legally drive on public roads?\n(A) Yes, with supervision\n(B) No\n(C) Only during daytime\n(D) Yes, for short distances",
+        "answer": "B",
+        "reasoning_type": "rule_application"
+      },
+      {
+        "id": "RECLOR_A10",
+        "question": "Passage: Studies show that children who read for at least 20 minutes daily score higher on vocabulary tests. The more they read, the larger their vocabulary tends to be.\nQuestion: According to the passage, what is correlated with larger vocabulary?\n(A) Age\n(B) Reading amount\n(C) School quality\n(D) Parent education",
+        "answer": "B",
+        "reasoning_type": "stated_correlation"
+      },
+      {
+        "id": "RECLOR_A11",
+        "question": "Passage: Antibiotics kill bacteria but are ineffective against viruses. The common cold is caused by a virus.\nQuestion: Would antibiotics help cure a common cold?\n(A) Yes\n(B) No\n(C) Only if severe\n(D) Sometimes",
+        "answer": "B",
+        "reasoning_type": "logical_application"
+      },
+      {
+        "id": "RECLOR_A12",
+        "question": "Passage: All members of the club must pay annual dues. Non-members may attend one event for free.\nQuestion: If someone has never paid dues, what is their status?\n(A) Full member\n(B) Not a member\n(C) Honorary member\n(D) Suspended member",
+        "answer": "B",
+        "reasoning_type": "definitional_inference"
+      },
+      {
+        "id": "RECLOR_A13",
+        "question": "Passage: The experiment showed that plants grow faster with classical music than with no music. Plants exposed to rock music grew slowest.\nQuestion: Which type of music was associated with the fastest growth?\n(A) Rock music\n(B) Classical music\n(C) No music\n(D) Jazz music",
+        "answer": "B",
+        "reasoning_type": "comparative_inference"
+      },
+      {
+        "id": "RECLOR_A14",
+        "question": "Passage: Every chef in this restaurant has at least 5 years of experience. Paul just started working here as a chef.\nQuestion: What can we conclude about Paul's experience?\n(A) Paul has less than 5 years experience\n(B) Paul has at least 5 years experience\n(C) Paul has exactly 5 years experience\n(D) Paul has no experience",
+        "answer": "B",
+        "reasoning_type": "universal_quantifier"
+      },
+      {
+        "id": "RECLOR_A15",
+        "question": "Passage: Water boils at 100°C at sea level. As altitude increases, the boiling point decreases.\nQuestion: At a high mountain top, at what temperature would water boil?\n(A) Exactly 100°C\n(B) Above 100°C\n(C) Below 100°C\n(D) Water cannot boil at high altitudes",
+        "answer": "C",
+        "reasoning_type": "trend_application"
+      },
+      {
+        "id": "RECLOR_A16",
+        "question": "Passage: The store offers free shipping for orders over $50. Your order totals $45.\nQuestion: Will you receive free shipping?\n(A) Yes\n(B) No\n(C) Maybe\n(D) Only on certain items",
+        "answer": "B",
+        "reasoning_type": "threshold_comparison"
+      },
+      {
+        "id": "RECLOR_A17",
+        "question": "Passage: Nocturnal animals are most active at night. Owls are nocturnal animals.\nQuestion: When are owls most active?\n(A) Morning\n(B) Afternoon\n(C) Night\n(D) Midday",
+        "answer": "C",
+        "reasoning_type": "definition_application"
+      },
+      {
+        "id": "RECLOR_A18",
+        "question": "Passage: The parking garage is full. No more vehicles can enter until someone leaves.\nQuestion: If you arrive now, can you park in the garage?\n(A) Yes, if you pay extra\n(B) No, not until someone leaves\n(C) Yes, on the roof level\n(D) Only for 30 minutes",
+        "answer": "B",
+        "reasoning_type": "state_inference"
+      },
+      {
+        "id": "RECLOR_A19",
+        "question": "Passage: Countries in the northern hemisphere experience summer in June, July, and August. Australia is in the southern hemisphere.\nQuestion: Does Australia experience summer in July?\n(A) Yes\n(B) No\n(C) Only in some regions\n(D) Depends on the year",
+        "answer": "B",
+        "reasoning_type": "hemispheric_inference"
+      },
+      {
+        "id": "RECLOR_A20",
+        "question": "Passage: The recipe requires 2 cups of flour for every 1 cup of sugar. You want to use 3 cups of sugar.\nQuestion: How many cups of flour do you need?\n(A) 3\n(B) 6\n(C) 4\n(D) 2",
+        "answer": "B",
+        "reasoning_type": "ratio_application"
+      }
+    ]
+  },
+  "tier_b": {
+    "name": "Advanced",
+    "description": "Complex argument evaluation, assumption identification, and causal reasoning",
+    "questions": [
+      {
+        "id": "RECLOR_B01",
+        "question": "Passage: Economist: Some critics argue that raising the minimum wage will lead to job losses. However, studies from regions that recently raised their minimum wage show no significant decrease in employment. Therefore, concerns about job losses are unfounded.\nQuestion: Which of the following is an assumption on which the economist's argument depends?\n(A) All economists agree on the effects of minimum wage increases\n(B) The regions studied are representative of other regions\n(C) Employment is the only measure of economic health\n(D) Minimum wage workers spend all their additional income",
+        "answer": "B",
+        "reasoning_type": "assumption_identification"
+      },
+      {
+        "id": "RECLOR_B02",
+        "question": "Passage: The introduction of wolves to Yellowstone National Park led to a decrease in the elk population. Surprisingly, this resulted in increased vegetation along riverbanks, which stabilized the rivers' courses.\nQuestion: Which of the following best explains the connection between wolves and river stability?\n(A) Wolves directly consumed vegetation along riverbanks\n(B) Fewer elk meant less grazing, allowing vegetation to grow and hold soil in place\n(C) Rivers naturally become more stable over time\n(D) Wolves created dams similar to beavers",
+        "answer": "B",
+        "reasoning_type": "causal_chain_reasoning"
+      },
+      {
+        "id": "RECLOR_B03",
+        "question": "Passage: Company executives argue that the recent decline in profits is due to increased competition. However, the company's market share has remained stable, and competitors report similar profit margins.\nQuestion: The statements above, if true, most seriously undermine which of the following conclusions?\n(A) The company's costs have increased\n(B) Competition caused the decline in profits\n(C) The executives are honest\n(D) Profit margins are an important metric",
+        "answer": "B",
+        "reasoning_type": "argument_evaluation"
+      },
+      {
+        "id": "RECLOR_B04",
+        "question": "Passage: A pharmaceutical company claims its new drug reduces heart attacks by 50%. In the clinical trial, 2 out of 1000 patients taking the drug had heart attacks, compared to 4 out of 1000 taking a placebo.\nQuestion: Which of the following, if true, provides the strongest reason to be cautious about the company's claim?\n(A) The drug has mild side effects\n(B) The absolute risk reduction is only 0.2%\n(C) The trial lasted for two years\n(D) The company has produced effective drugs before",
+        "answer": "B",
+        "reasoning_type": "statistical_reasoning"
+      },
+      {
+        "id": "RECLOR_B05",
+        "question": "Passage: Critics argue that video games cause violence in children. However, as video game sales have increased dramatically over the past two decades, violent crime rates among juveniles have actually decreased.\nQuestion: Which of the following, if true, would most strengthen the critics' position despite the statistics?\n(A) Most video games are not violent\n(B) Children who play violent games may become desensitized to violence without committing crimes\n(C) Video game technology has improved\n(D) Adults also play video games",
+        "answer": "B",
+        "reasoning_type": "counterargument_evaluation"
+      },
+      {
+        "id": "RECLOR_B06",
+        "question": "Passage: The mayor argues for expanding public transit, citing that cities with more public transit have lower traffic congestion. The city council is skeptical.\nQuestion: Which of the following, if true, provides the best grounds for the council's skepticism?\n(A) Public transit is expensive to build\n(B) Cities may have built transit systems because they already had high density and congestion\n(C) Some people prefer driving\n(D) The mayor has supported transit before",
+        "answer": "B",
+        "reasoning_type": "reverse_causation"
+      },
+      {
+        "id": "RECLOR_B07",
+        "question": "Passage: A new study shows that people who eat breakfast daily weigh less on average than those who skip breakfast. Nutritionists are recommending breakfast to combat obesity.\nQuestion: Which of the following considerations would be most important in evaluating this recommendation?\n(A) Whether breakfast eaters also differ in other health habits\n(B) What types of breakfast foods are most common\n(C) Whether the study was published in a peer-reviewed journal\n(D) How much weight difference was observed",
+        "answer": "A",
+        "reasoning_type": "confounding_consideration"
+      },
+      {
+        "id": "RECLOR_B08",
+        "question": "Passage: Historian: The fall of Rome was primarily due to economic decline. As trade routes were disrupted, the empire could no longer afford its military.\nQuestion: Which of the following, if true, would most directly challenge the historian's thesis?\n(A) Some Roman provinces remained prosperous until the fall\n(B) Military spending decreased before trade route disruption\n(C) Other empires have fallen for economic reasons\n(D) The Roman economy was complex",
+        "answer": "A",
+        "reasoning_type": "counterexample"
+      },
+      {
+        "id": "RECLOR_B09",
+        "question": "Passage: Dr. Smith claims that her new teaching method improves test scores. In her classroom, where she used the method, scores improved by 15%. In other classrooms using traditional methods, scores remained the same.\nQuestion: Which of the following is a potential flaw in concluding the method is effective?\n(A) Test scores are not important\n(B) Dr. Smith may have unconsciously paid more attention to struggling students\n(C) The improvement was only 15%\n(D) Dr. Smith has taught for many years",
+        "answer": "B",
+        "reasoning_type": "experimenter_bias"
+      },
+      {
+        "id": "RECLOR_B10",
+        "question": "Passage: Advertisement: Four out of five dentists recommend Sparkle toothpaste. Therefore, Sparkle is the best toothpaste for your dental health.\nQuestion: Which of the following is the most serious flaw in the advertisement's reasoning?\n(A) Not all toothpastes were tested\n(B) The dentists may recommend multiple brands, not Sparkle exclusively\n(C) Some dentists are better than others\n(D) The advertisement is biased",
+        "answer": "B",
+        "reasoning_type": "misleading_statistics"
+      },
+      {
+        "id": "RECLOR_B11",
+        "question": "Passage: Biologist: Polar bear populations have declined as Arctic ice has melted. If we don't reduce carbon emissions, polar bears will become extinct.\nQuestion: Which of the following is an unstated assumption in the biologist's argument?\n(A) Polar bears cannot adapt to warmer climates\n(B) Carbon emissions are the primary cause of Arctic ice melt\n(C) Other animals are also affected by climate change\n(D) Polar bears are important to the ecosystem",
+        "answer": "A",
+        "reasoning_type": "hidden_premise"
+      },
+      {
+        "id": "RECLOR_B12",
+        "question": "Passage: In a survey of 500 people, 60% said they would pay more for environmentally friendly products. Yet, actual sales of such products remain low.\nQuestion: Which of the following best explains this discrepancy?\n(A) The survey sample was too small\n(B) People may express intentions that don't match their actual purchasing behavior\n(C) Environmentally friendly products are not available\n(D) The survey was conducted incorrectly",
+        "answer": "B",
+        "reasoning_type": "intention_behavior_gap"
+      },
+      {
+        "id": "RECLOR_B13",
+        "question": "Passage: Law professor: In countries with stricter gun laws, there are fewer gun deaths. Therefore, the United States should adopt stricter gun laws to reduce gun deaths.\nQuestion: Which of the following, if true, would most weaken this argument?\n(A) The United States has a constitutional amendment regarding gun rights\n(B) Countries with strict gun laws may have different cultural attitudes toward violence\n(C) Some gun deaths are suicides\n(D) Law enforcement supports stricter laws",
+        "answer": "B",
+        "reasoning_type": "cross_cultural_comparison"
+      },
+      {
+        "id": "RECLOR_B14",
+        "question": "Passage: Editorial: Test scores in our schools have risen since we increased funding. This proves that money improves education.\nQuestion: Which of the following, if true, would most weaken this conclusion?\n(A) Test scores are still below the national average\n(B) During the same period, a new testing format was introduced that is generally considered easier\n(C) Teachers welcomed the additional funding\n(D) Neighboring districts also increased funding",
+        "answer": "B",
+        "reasoning_type": "alternative_explanation"
+      },
+      {
+        "id": "RECLOR_B15",
+        "question": "Passage: Medication X was tested in two groups: one group received the medication, while the control group received a sugar pill. Both groups showed improvement, but the medication group improved more.\nQuestion: What does the improvement in the control group suggest?\n(A) The medication doesn't work\n(B) There is a placebo effect\n(C) Sugar pills are therapeutic\n(D) The test was flawed",
+        "answer": "B",
+        "reasoning_type": "placebo_understanding"
+      },
+      {
+        "id": "RECLOR_B16",
+        "question": "Passage: Philosopher: We should not judge historical figures by modern moral standards. Doing so would condemn nearly everyone from the past.\nQuestion: Which of the following, if true, most challenges the philosopher's position?\n(A) Some historical figures held views considered progressive even in their time\n(B) Moral standards have always varied\n(C) Many historical figures were admired in their time\n(D) We cannot fully understand the past",
+        "answer": "A",
+        "reasoning_type": "position_challenging"
+      },
+      {
+        "id": "RECLOR_B17",
+        "question": "Passage: Manager: Employee productivity increased after we installed larger windows in the office. This shows that natural light improves performance.\nQuestion: Which of the following is an alternative explanation the manager has not considered?\n(A) Employees prefer natural light\n(B) The installation project may have signaled to employees that management cares about them\n(C) Some employees sit farther from windows\n(D) Productivity is hard to measure",
+        "answer": "B",
+        "reasoning_type": "hawthorne_effect"
+      },
+      {
+        "id": "RECLOR_B18",
+        "question": "Passage: Researcher: We found that students who took music lessons scored higher on math tests. Therefore, schools should require music education to improve math performance.\nQuestion: The researcher's recommendation assumes which of the following?\n(A) Music is enjoyable for students\n(B) The relationship between music lessons and math scores is causal, not just correlational\n(C) Math is more important than music\n(D) All students can afford music lessons",
+        "answer": "B",
+        "reasoning_type": "correlation_causation_assumption"
+      },
+      {
+        "id": "RECLOR_B19",
+        "question": "Passage: Political scientist: Countries with democratic governments tend to have higher standards of living. This demonstrates that democracy leads to prosperity.\nQuestion: Which of the following represents an alternative interpretation of the data?\n(A) Democracies are older than autocracies\n(B) Prosperity may make it easier for countries to maintain democratic institutions\n(C) Standards of living are subjective\n(D) Some democracies are poor",
+        "answer": "B",
+        "reasoning_type": "reverse_causation_alternative"
+      },
+      {
+        "id": "RECLOR_B20",
+        "question": "Passage: The defendant was at the scene of the crime. The defendant had a motive. The defendant's fingerprints were found on the weapon. The defense argues that this evidence is merely circumstantial.\nQuestion: Which of the following, if true, would most strengthen the defense's position?\n(A) The defendant is of good character\n(B) All the evidence could be explained by innocent activities the defendant previously engaged in at that location\n(C) Fingerprints can be planted\n(D) Witnesses are unreliable",
+        "answer": "B",
+        "reasoning_type": "alternative_innocent_explanation"
+      }
+    ]
+  }
+}

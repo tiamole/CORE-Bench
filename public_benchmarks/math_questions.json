@@ -1,0 +1,297 @@
+{
+  "benchmark": "MATH",
+  "description": "Competition Mathematics - AMC, AIME level problems",
+  "source": "Hendrycks et al. (arXiv:2103.03874)",
+  "tier_a": {
+    "name": "Basic",
+    "description": "Level 1-2 problems (algebra, prealgebra, basic geometry)",
+    "questions": [
+      {
+        "id": "MATH_A01",
+        "question": "A board game spinner is divided into three parts labeled A, B and C. The probability of the spinner landing on A is 1/3 and the probability of the spinner landing on B is 5/12. What is the probability of the spinner landing on C? Express your answer as a common fraction.",
+        "answer": "1/4",
+        "reasoning_type": "probability_basic",
+        "topic": "Counting & Probability"
+      },
+      {
+        "id": "MATH_A02",
+        "question": "Solve for x: 3x + 7 = 22",
+        "answer": "5",
+        "reasoning_type": "linear_algebra",
+        "topic": "Prealgebra"
+      },
+      {
+        "id": "MATH_A03",
+        "question": "What is the value of 2^3 × 3^2?",
+        "answer": "72",
+        "reasoning_type": "exponent_arithmetic",
+        "topic": "Prealgebra"
+      },
+      {
+        "id": "MATH_A04",
+        "question": "What is the smallest positive integer that is both a multiple of 7 and a multiple of 4?",
+        "answer": "28",
+        "reasoning_type": "lcm",
+        "topic": "Number Theory"
+      },
+      {
+        "id": "MATH_A05",
+        "question": "If 3x - 5 = 10, what is the value of x?",
+        "answer": "5",
+        "reasoning_type": "linear_equation",
+        "topic": "Prealgebra"
+      },
+      {
+        "id": "MATH_A06",
+        "question": "What is the area of a rectangle with length 8 cm and width 5 cm?",
+        "answer": "40",
+        "reasoning_type": "area_calculation",
+        "topic": "Geometry"
+      },
+      {
+        "id": "MATH_A07",
+        "question": "Simplify: 2(x + 3) - 4",
+        "answer": "2x + 2",
+        "reasoning_type": "algebraic_simplification",
+        "topic": "Algebra"
+      },
+      {
+        "id": "MATH_A08",
+        "question": "What is the greatest common divisor of 24 and 36?",
+        "answer": "12",
+        "reasoning_type": "gcd",
+        "topic": "Number Theory"
+      },
+      {
+        "id": "MATH_A09",
+        "question": "If a triangle has angles of 60° and 80°, what is the measure of the third angle?",
+        "answer": "40",
+        "reasoning_type": "triangle_angles",
+        "topic": "Geometry"
+      },
+      {
+        "id": "MATH_A10",
+        "question": "What is 15% of 80?",
+        "answer": "12",
+        "reasoning_type": "percentage",
+        "topic": "Prealgebra"
+      },
+      {
+        "id": "MATH_A11",
+        "question": "Solve for y: y/4 = 7",
+        "answer": "28",
+        "reasoning_type": "simple_equation",
+        "topic": "Prealgebra"
+      },
+      {
+        "id": "MATH_A12",
+        "question": "What is the perimeter of a square with side length 9 units?",
+        "answer": "36",
+        "reasoning_type": "perimeter",
+        "topic": "Geometry"
+      },
+      {
+        "id": "MATH_A13",
+        "question": "Evaluate: 5! / 3!",
+        "answer": "20",
+        "reasoning_type": "factorial",
+        "topic": "Counting & Probability"
+      },
+      {
+        "id": "MATH_A14",
+        "question": "What is the sum of the first 5 positive integers?",
+        "answer": "15",
+        "reasoning_type": "arithmetic_sum",
+        "topic": "Prealgebra"
+      },
+      {
+        "id": "MATH_A15",
+        "question": "If f(x) = 2x + 1, what is f(3)?",
+        "answer": "7",
+        "reasoning_type": "function_evaluation",
+        "topic": "Algebra"
+      },
+      {
+        "id": "MATH_A16",
+        "question": "What is the median of the set {3, 7, 2, 9, 5}?",
+        "answer": "5",
+        "reasoning_type": "statistics",
+        "topic": "Prealgebra"
+      },
+      {
+        "id": "MATH_A17",
+        "question": "Convert 0.75 to a fraction in lowest terms.",
+        "answer": "3/4",
+        "reasoning_type": "decimal_fraction",
+        "topic": "Prealgebra"
+      },
+      {
+        "id": "MATH_A18",
+        "question": "What is the value of √144?",
+        "answer": "12",
+        "reasoning_type": "square_root",
+        "topic": "Prealgebra"
+      },
+      {
+        "id": "MATH_A19",
+        "question": "In how many ways can 3 people be arranged in a line?",
+        "answer": "6",
+        "reasoning_type": "permutation",
+        "topic": "Counting & Probability"
+      },
+      {
+        "id": "MATH_A20",
+        "question": "What is the slope of the line passing through points (1, 2) and (3, 6)?",
+        "answer": "2",
+        "reasoning_type": "slope",
+        "topic": "Algebra"
+      }
+    ]
+  },
+  "tier_b": {
+    "name": "Advanced",
+    "description": "Level 4-5 problems (number theory, geometry, counting, complex algebra)",
+    "questions": [
+      {
+        "id": "MATH_B01",
+        "question": "How many ways can 5 distinguishable balls be placed into 3 distinguishable boxes such that no box is empty?",
+        "answer": "150",
+        "reasoning_type": "counting_combinatorics",
+        "topic": "Counting & Probability"
+      },
+      {
+        "id": "MATH_B02",
+        "question": "Find the sum of all positive integers n such that n^2 + 12n - 2007 is a perfect square.",
+        "answer": "80",
+        "reasoning_type": "number_theory",
+        "topic": "Number Theory"
+      },
+      {
+        "id": "MATH_B03",
+        "question": "In triangle ABC, AB = 13, BC = 14, and CA = 15. Find the area of triangle ABC.",
+        "answer": "84",
+        "reasoning_type": "herons_formula",
+        "topic": "Geometry"
+      },
+      {
+        "id": "MATH_B04",
+        "question": "Find the remainder when 2^100 is divided by 7.",
+        "answer": "2",
+        "reasoning_type": "modular_arithmetic",
+        "topic": "Number Theory"
+      },
+      {
+        "id": "MATH_B05",
+        "question": "How many distinct permutations of the letters of the word 'MISSISSIPPI' are there?",
+        "answer": "34650",
+        "reasoning_type": "permutations_repetition",
+        "topic": "Counting & Probability"
+      },
+      {
+        "id": "MATH_B06",
+        "question": "Find all real solutions to the equation x^4 - 5x^2 + 4 = 0.",
+        "answer": "x = -2, -1, 1, 2",
+        "reasoning_type": "quartic_equation",
+        "topic": "Algebra"
+      },
+      {
+        "id": "MATH_B07",
+        "question": "The sum of an infinite geometric series is 12, and the first term is 8. What is the common ratio?",
+        "answer": "1/3",
+        "reasoning_type": "infinite_series",
+        "topic": "Algebra"
+      },
+      {
+        "id": "MATH_B08",
+        "question": "A circle is inscribed in a triangle with sides 5, 12, and 13. What is the radius of the circle?",
+        "answer": "2",
+        "reasoning_type": "incircle_radius",
+        "topic": "Geometry"
+      },
+      {
+        "id": "MATH_B09",
+        "question": "How many positive divisors does 360 have?",
+        "answer": "24",
+        "reasoning_type": "divisor_count",
+        "topic": "Number Theory"
+      },
+      {
+        "id": "MATH_B10",
+        "question": "Find the coefficient of x^3 in the expansion of (2x - 1)^5.",
+        "answer": "-80",
+        "reasoning_type": "binomial_theorem",
+        "topic": "Algebra"
+      },
+      {
+        "id": "MATH_B11",
+        "question": "In how many ways can 8 people be seated around a circular table?",
+        "answer": "5040",
+        "reasoning_type": "circular_permutation",
+        "topic": "Counting & Probability"
+      },
+      {
+        "id": "MATH_B12",
+        "question": "Find the value of sin(75°) in exact form.",
+        "answer": "(√6 + √2)/4",
+        "reasoning_type": "trigonometric_identity",
+        "topic": "Precalculus"
+      },
+      {
+        "id": "MATH_B13",
+        "question": "What is the units digit of 7^2023?",
+        "answer": "3",
+        "reasoning_type": "cyclic_patterns",
+        "topic": "Number Theory"
+      },
+      {
+        "id": "MATH_B14",
+        "question": "A bag contains 5 red balls and 3 blue balls. If 3 balls are drawn without replacement, what is the probability that exactly 2 are red?",
+        "answer": "15/28",
+        "reasoning_type": "hypergeometric",
+        "topic": "Counting & Probability"
+      },
+      {
+        "id": "MATH_B15",
+        "question": "Find the sum of all two-digit numbers that are divisible by both 3 and 5.",
+        "answer": "315",
+        "reasoning_type": "divisibility_sum",
+        "topic": "Number Theory"
+      },
+      {
+        "id": "MATH_B16",
+        "question": "The diagonals of a rhombus have lengths 10 and 24. What is the area of the rhombus?",
+        "answer": "120",
+        "reasoning_type": "rhombus_area",
+        "topic": "Geometry"
+      },
+      {
+        "id": "MATH_B17",
+        "question": "Solve for x: log₂(x) + log₂(x-3) = 2",
+        "answer": "4",
+        "reasoning_type": "logarithmic_equation",
+        "topic": "Intermediate Algebra"
+      },
+      {
+        "id": "MATH_B18",
+        "question": "How many subsets of {1, 2, 3, 4, 5, 6} contain at least 2 elements?",
+        "answer": "57",
+        "reasoning_type": "subset_counting",
+        "topic": "Counting & Probability"
+      },
+      {
+        "id": "MATH_B19",
+        "question": "Find the area of a regular hexagon with side length 6.",
+        "answer": "54√3",
+        "reasoning_type": "regular_polygon",
+        "topic": "Geometry"
+      },
+      {
+        "id": "MATH_B20",
+        "question": "If a and b are the roots of x^2 - 5x + 3 = 0, find the value of a^2 + b^2.",
+        "answer": "19",
+        "reasoning_type": "vietas_formulas",
+        "topic": "Algebra"
+      }
+    ]
+  }
+}

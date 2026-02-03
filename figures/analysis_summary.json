@@ -1,0 +1,176 @@
+{
+  "benchmark_name": "CORE-Bench",
+  "source_url": "https://www.kaggle.com/benchmarks/taiwofeyijimi/core-bench",
+  "analysis_date": "2026-01-29",
+  "statistics": {
+    "total_models": 22,
+    "total_tasks": 18,
+    "mean_score": 67.5,
+    "median_score": 77.5,
+    "std_dev": 22.52,
+    "min_score": 21.0,
+    "max_score": 88.0
+  },
+  "performance_tiers": {
+    "excellent_80plus": 10,
+    "good_60_79": 7,
+    "moderate_40_59": 1,
+    "low_below_40": 4
+  },
+  "leaderboard": [
+    {
+      "rank": 1,
+      "model": "Gemini 3 Flash Preview",
+      "family": "Google",
+      "tier": "Medium",
+      "score_percent": 88.0
+    },
+    {
+      "rank": 2,
+      "model": "Qwen 3 Next 80B Thinking",
+      "family": "Alibaba (Qwen)",
+      "tier": "Large/Flagship",
+      "score_percent": 88.0
+    },
+    {
+      "rank": 3,
+      "model": "Claude Opus 4.1",
+      "family": "Anthropic",
+      "tier": "Large/Flagship",
+      "score_percent": 85.0
+    },
+    {
+      "rank": 4,
+      "model": "Claude Haiku 4.5",
+      "family": "Anthropic",
+      "tier": "Medium",
+      "score_percent": 83.0
+    },
+    {
+      "rank": 5,
+      "model": "Claude Sonnet 4.5",
+      "family": "Anthropic",
+      "tier": "Medium",
+      "score_percent": 83.0
+    },
+    {
+      "rank": 6,
+      "model": "Deepseek V3.1",
+      "family": "DeepSeek",
+      "tier": "Unknown",
+      "score_percent": 83.0
+    },
+    {
+      "rank": 7,
+      "model": "Gemini 2.5 Flash",
+      "family": "Google",
+      "tier": "Medium",
+      "score_percent": 83.0
+    },
+    {
+      "rank": 8,
+      "model": "Gemini 3 Pro Preview",
+      "family": "Google",
+      "tier": "Large/Flagship",
+      "score_percent": 83.0
+    },
+    {
+      "rank": 9,
+      "model": "Qwen 3 Coder 480B",
+      "family": "Alibaba (Qwen)",
+      "tier": "Large/Flagship",
+      "score_percent": 83.0
+    },
+    {
+      "rank": 10,
+      "model": "Qwen 3 Next 80B Instruct",
+      "family": "Alibaba (Qwen)",
+      "tier": "Large/Flagship",
+      "score_percent": 83.0
+    },
+    {
+      "rank": 11,
+      "model": "Claude Opus 4.5",
+      "family": "Anthropic",
+      "tier": "Large/Flagship",
+      "score_percent": 78.0
+    },
+    {
+      "rank": 12,
+      "model": "DeepSeek V3.2",
+      "family": "DeepSeek",
+      "tier": "Unknown",
+      "score_percent": 77.0
+    },
+    {
+      "rank": 13,
+      "model": "Gemini 2.5 Pro",
+      "family": "Google",
+      "tier": "Large/Flagship",
+      "score_percent": 77.0
+    },
+    {
+      "rank": 14,
+      "model": "Gemini 2.0 Flash",
+      "family": "Google",
+      "tier": "Medium",
+      "score_percent": 69.0
+    },
+    {
+      "rank": 15,
+      "model": "Gemini 2.0 Flash Lite",
+      "family": "Google",
+      "tier": "Medium",
+      "score_percent": 69.0
+    },
+    {
+      "rank": 16,
+      "model": "Qwen 3 235B A22B Instruct",
+      "family": "Alibaba (Qwen)",
+      "tier": "Large/Flagship",
+      "score_percent": 69.0
+    },
+    {
+      "rank": 17,
+      "model": "Claude Sonnet 4",
+      "family": "Anthropic",
+      "tier": "Medium",
+      "score_percent": 61.0
+    },
+    {
+      "rank": 18,
+      "model": "DeepSeek-R1",
+      "family": "DeepSeek",
+      "tier": "Unknown",
+      "score_percent": 46.0
+    },
+    {
+      "rank": 19,
+      "model": "Gemma 3 12B",
+      "family": "Google",
+      "tier": "Medium",
+      "score_percent": 30.0
+    },
+    {
+      "rank": 20,
+      "model": "Gemma 3 27B",
+      "family": "Google",
+      "tier": "Medium",
+      "score_percent": 23.0
+    },
+    {
+      "rank": 21,
+      "model": "Gemma 3 4B",
+      "family": "Google",
+      "tier": "Small",
+      "score_percent": 23.0
+    },
+    {
+      "rank": 22,
+      "model": "Gemma 3 1B",
+      "family": "Google",
+      "tier": "Small",
+      "score_percent": 21.0
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+# CORE-Bench Dependencies
+# Install: pip install -r requirements.txt
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Statistical analysis
+scipy>=1.10.0
+scikit-learn>=1.2.0
+
+# Jupyter notebooks
+jupyter>=1.0.0
+nbconvert>=7.0.0
+ipykernel>=6.0.0
+
+# Kaggle integration
+kaggle>=1.5.0
+kaggle-benchmarks>=0.1.0

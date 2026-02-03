@@ -1,0 +1,257 @@
+{
+  "benchmark": "LogiQA",
+  "description": "Logical Reasoning from Chinese Civil Servants Examination",
+  "source": "Liu et al. (arXiv:2007.08124)",
+  "tier_a": {
+    "name": "Basic",
+    "description": "Simple categorical syllogisms and single-premise inferences",
+    "questions": [
+      {
+        "id": "LOGIQA_A01",
+        "question": "All managers in the company have MBAs. Some employees with MBAs are not managers. Which of the following can be logically inferred?\n(A) Some employees are not managers\n(B) All employees have MBAs\n(C) No managers are employees\n(D) Some MBA holders work for the company",
+        "answer": "D",
+        "reasoning_type": "categorical_syllogism"
+      },
+      {
+        "id": "LOGIQA_A02",
+        "question": "If it rains, the ground gets wet. The ground is wet. What can we conclude?\n(A) It rained\n(B) It might have rained\n(C) It did not rain\n(D) The ground is always wet",
+        "answer": "B",
+        "reasoning_type": "conditional_reasoning"
+      },
+      {
+        "id": "LOGIQA_A03",
+        "question": "All birds have feathers. Penguins are birds. What can we conclude?\n(A) All feathered animals are birds\n(B) Penguins have feathers\n(C) Some birds are not penguins\n(D) Penguins can fly",
+        "answer": "B",
+        "reasoning_type": "modus_ponens"
+      },
+      {
+        "id": "LOGIQA_A04",
+        "question": "No reptiles are mammals. Some pets are mammals. What can we conclude?\n(A) No pets are reptiles\n(B) Some pets are not reptiles\n(C) All reptiles are pets\n(D) No mammals are pets",
+        "answer": "B",
+        "reasoning_type": "categorical_syllogism"
+      },
+      {
+        "id": "LOGIQA_A05",
+        "question": "If you study hard, you will pass the exam. John did not pass the exam. What can we conclude?\n(A) John studied hard\n(B) John did not study hard\n(C) The exam was too difficult\n(D) John was sick",
+        "answer": "B",
+        "reasoning_type": "modus_tollens"
+      },
+      {
+        "id": "LOGIQA_A06",
+        "question": "All doctors are educated. Some educated people are wealthy. What can we conclude?\n(A) All doctors are wealthy\n(B) Some doctors might be wealthy\n(C) No doctors are wealthy\n(D) All wealthy people are doctors",
+        "answer": "B",
+        "reasoning_type": "possibility_inference"
+      },
+      {
+        "id": "LOGIQA_A07",
+        "question": "Either the project will succeed or the funding will be cut. The project succeeded. What can we conclude about the funding?\n(A) The funding was definitely cut\n(B) The funding was definitely not cut\n(C) We cannot determine if funding was cut\n(D) The funding was partially cut",
+        "answer": "C",
+        "reasoning_type": "inclusive_disjunction"
+      },
+      {
+        "id": "LOGIQA_A08",
+        "question": "All metals conduct electricity. Copper is a metal. What must be true?\n(A) All conductors are metals\n(B) Copper conducts electricity\n(C) Only copper conducts electricity\n(D) Some metals are not copper",
+        "answer": "B",
+        "reasoning_type": "universal_instantiation"
+      },
+      {
+        "id": "LOGIQA_A09",
+        "question": "No fish can walk. Some animals can walk. What can we conclude?\n(A) Some animals are not fish\n(B) All animals are fish\n(C) No animals are fish\n(D) Some fish are animals",
+        "answer": "A",
+        "reasoning_type": "categorical_inference"
+      },
+      {
+        "id": "LOGIQA_A10",
+        "question": "If the alarm sounds, evacuate immediately. The alarm is not sounding. What should you do?\n(A) Evacuate immediately\n(B) Stay in place; no need to evacuate\n(C) We cannot determine from this information alone what to do\n(D) Check if there's a fire",
+        "answer": "C",
+        "reasoning_type": "denying_antecedent_fallacy"
+      },
+      {
+        "id": "LOGIQA_A11",
+        "question": "All roses are flowers. All flowers need water. What can we conclude?\n(A) All roses need water\n(B) All things that need water are roses\n(C) Some flowers are not roses\n(D) Water is a flower",
+        "answer": "A",
+        "reasoning_type": "transitive_syllogism"
+      },
+      {
+        "id": "LOGIQA_A12",
+        "question": "Some students play sports. All students study. What can we conclude?\n(A) All people who play sports study\n(B) Some people who study play sports\n(C) No students play sports\n(D) All sports players are students",
+        "answer": "B",
+        "reasoning_type": "particular_inference"
+      },
+      {
+        "id": "LOGIQA_A13",
+        "question": "If A is true, then B is true. B is false. What can we conclude about A?\n(A) A is true\n(B) A is false\n(C) A might be true\n(D) Cannot determine",
+        "answer": "B",
+        "reasoning_type": "contraposition"
+      },
+      {
+        "id": "LOGIQA_A14",
+        "question": "All squares are rectangles. All rectangles have four sides. What can we conclude about squares?\n(A) Squares have three sides\n(B) Squares have four sides\n(C) Some squares are not rectangles\n(D) All four-sided figures are squares",
+        "answer": "B",
+        "reasoning_type": "syllogistic_chain"
+      },
+      {
+        "id": "LOGIQA_A15",
+        "question": "Either John or Mary will attend the meeting. John is attending. Can we conclude Mary is not attending?\n(A) Yes, Mary is definitely not attending\n(B) No, Mary might still attend\n(C) Mary must attend too\n(D) Cannot determine",
+        "answer": "B",
+        "reasoning_type": "inclusive_or"
+      },
+      {
+        "id": "LOGIQA_A16",
+        "question": "No children are allowed. Tom is a child. Can Tom be allowed?\n(A) Yes\n(B) No\n(C) Possibly\n(D) Only with supervision",
+        "answer": "B",
+        "reasoning_type": "negative_universal"
+      },
+      {
+        "id": "LOGIQA_A17",
+        "question": "All employees must attend training. Sarah is an employee. What must Sarah do?\n(A) Skip training\n(B) Attend training\n(C) Request exemption\n(D) Train others",
+        "answer": "B",
+        "reasoning_type": "universal_application"
+      },
+      {
+        "id": "LOGIQA_A18",
+        "question": "If it's a weekend, the office is closed. Today is Monday. What can we conclude?\n(A) The office is closed\n(B) The office is open\n(C) We cannot determine from this information if the office is open\n(D) It's the weekend",
+        "answer": "C",
+        "reasoning_type": "conditional_logic"
+      },
+      {
+        "id": "LOGIQA_A19",
+        "question": "Some books are expensive. All textbooks are books. What can we conclude?\n(A) All textbooks are expensive\n(B) Some textbooks might be expensive\n(C) No textbooks are expensive\n(D) Expensive things are textbooks",
+        "answer": "B",
+        "reasoning_type": "possibility_from_some"
+      },
+      {
+        "id": "LOGIQA_A20",
+        "question": "All cats are animals. Whiskers is a cat. Is Whiskers an animal?\n(A) Yes\n(B) No\n(C) Cannot determine\n(D) Only sometimes",
+        "answer": "A",
+        "reasoning_type": "direct_syllogism"
+      }
+    ]
+  },
+  "tier_b": {
+    "name": "Advanced",
+    "description": "Multi-premise arguments, paradox resolution, and complex inferences",
+    "questions": [
+      {
+        "id": "LOGIQA_B01",
+        "question": "Continuous exposure to indoor fluorescent lights is beneficial to hamsters with heart disease. One group of hamsters exposed to continuous fluorescent lights had an average lifespan 2.5% longer than those living in darkness. Which of the following questions was the initial motivation for conducting this experiment?\n(A) Can hospital light therapy promote patient recovery?\n(B) Which lives longer, the hamster under light or in dark?\n(C) What illness does the hamster have?\n(D) Do some hamsters need darkness?",
+        "answer": "A",
+        "reasoning_type": "experimental_design_inference"
+      },
+      {
+        "id": "LOGIQA_B02",
+        "question": "The local government claims that the new recycling program reduced landfill waste by 30%. However, critics point out that during the same period, population decreased by 15%, and a major manufacturing plant that produced significant waste closed. Which of the following, if true, would most weaken the government's claim?\n(A) Neighboring cities without recycling programs saw similar reductions\n(B) The recycling program received significant funding\n(C) Residents reported high satisfaction with the program\n(D) The 30% reduction was measured before adjusting for population changes",
+        "answer": "A",
+        "reasoning_type": "argument_weakening"
+      },
+      {
+        "id": "LOGIQA_B03",
+        "question": "Company policy states that employees who complete advanced training are eligible for promotion. John completed advanced training but was not promoted. Which of the following, if true, best explains this apparent contradiction?\n(A) John is the best performer in his department\n(B) The company had a promotion freeze due to budget constraints\n(C) John's manager recommends him highly\n(D) John completed the training ahead of schedule",
+        "answer": "B",
+        "reasoning_type": "paradox_resolution"
+      },
+      {
+        "id": "LOGIQA_B04",
+        "question": "A study found that people who drink coffee regularly have lower rates of depression. The researchers concluded that coffee prevents depression. Which of the following is the strongest objection to this conclusion?\n(A) Some coffee drinkers are still depressed\n(B) People who are less depressed may be more likely to drink coffee\n(C) The study only included adults\n(D) Tea drinkers were not included in the study",
+        "answer": "B",
+        "reasoning_type": "correlation_causation"
+      },
+      {
+        "id": "LOGIQA_B05",
+        "question": "All Olympic athletes train intensively. Some intensive trainers suffer injuries. No person suffering injuries can compete. Maria is an Olympic athlete who is competing. Which of the following must be true?\n(A) Maria did not train intensively\n(B) Maria suffered an injury but recovered\n(C) Maria trained intensively but did not suffer an injury\n(D) Maria is not actually an Olympic athlete",
+        "answer": "C",
+        "reasoning_type": "multi_premise_deduction"
+      },
+      {
+        "id": "LOGIQA_B06",
+        "question": "A town has the following rules: If a shop sells food, it must have a health certificate. If a shop has a health certificate, it is inspected monthly. If a shop is inspected monthly, it pays inspection fees. Shop X sells food. What can we definitely conclude about Shop X?\n(A) Shop X has been shut down\n(B) Shop X pays inspection fees\n(C) Shop X might avoid inspections\n(D) Shop X only sells non-perishable food",
+        "answer": "B",
+        "reasoning_type": "multi_conditional_chain"
+      },
+      {
+        "id": "LOGIQA_B07",
+        "question": "Economist: Raising minimum wage will increase unemployment. Critic: In states that raised minimum wage, unemployment did not increase. Economist: Those states had growing economies anyway. What logical flaw does the critic's argument potentially have?\n(A) Using anecdotal evidence\n(B) Not accounting for other economic factors\n(C) Attacking the economist personally\n(D) Using circular reasoning",
+        "answer": "B",
+        "reasoning_type": "confounding_variables"
+      },
+      {
+        "id": "LOGIQA_B08",
+        "question": "In a committee of 5 members, at least 3 must agree for a motion to pass. Members A and B always vote the same way. Member C always votes opposite to D. Member E votes with the majority of A, B, and C. If A votes yes, which additional condition guarantees the motion passes?\n(A) C votes yes\n(B) D votes yes\n(C) C and D both vote no\n(D) E abstains",
+        "answer": "A",
+        "reasoning_type": "voting_logic"
+      },
+      {
+        "id": "LOGIQA_B09",
+        "question": "Archaeologists found that ancient civilization X had advanced mathematics. Historian argues this means they had contact with civilization Y, which is known for mathematics. What unstated assumption does this argument require?\n(A) Civilization X could not have developed advanced mathematics independently\n(B) Civilization Y was the most advanced civilization\n(C) Mathematics is difficult to develop\n(D) The two civilizations existed at the same time",
+        "answer": "A",
+        "reasoning_type": "hidden_assumption"
+      },
+      {
+        "id": "LOGIQA_B10",
+        "question": "All effective medicines have side effects. Drug X has no side effects. The pharmaceutical company claims Drug X is effective. Which of the following best describes the situation?\n(A) The company's claim is logically consistent\n(B) The company's claim contradicts the given premise\n(C) Drug X must be a placebo\n(D) The premise about medicines is wrong",
+        "answer": "B",
+        "reasoning_type": "logical_contradiction"
+      },
+      {
+        "id": "LOGIQA_B11",
+        "question": "A detective reasons: The crime occurred between 8-10 PM. The suspect has an alibi for 8-9 PM. Therefore, if the suspect committed the crime, it was between 9-10 PM. What additional information would most help establish the suspect's guilt?\n(A) A witness saw the suspect near the scene at 9:30 PM\n(B) The suspect has committed crimes before\n(C) The victim knew the suspect\n(D) The suspect owns similar tools to those used in the crime",
+        "answer": "A",
+        "reasoning_type": "evidential_reasoning"
+      },
+      {
+        "id": "LOGIQA_B12",
+        "question": "Three witnesses give conflicting accounts. Witness 1: 'The car was red.' Witness 2: 'The car was not red.' Witness 3: 'If Witness 1 is right, then Witness 2 is wrong.' Given that all logical rules hold, what can we conclude?\n(A) The car was definitely red\n(B) Witness 3's statement is always true\n(C) At least one witness is wrong about the car color\n(D) We cannot determine the car's color",
+        "answer": "B",
+        "reasoning_type": "meta_logical"
+      },
+      {
+        "id": "LOGIQA_B13",
+        "question": "A policy change is justified only if it benefits the majority. Critics say the new tax benefits only the wealthy (20% of population). Supporters say the wealthy then invest, creating jobs benefiting everyone. For the supporters' argument to work, what must be true?\n(A) The wealthy always invest their tax savings\n(B) Job creation from investments benefits the majority more than direct tax benefits would\n(C) The majority supports the wealthy\n(D) Taxes should never increase",
+        "answer": "B",
+        "reasoning_type": "necessary_condition"
+      },
+      {
+        "id": "LOGIQA_B14",
+        "question": "In a logic puzzle: Exactly one of these three statements is true: (1) Box A contains gold, (2) Box B does not contain gold, (3) Box C contains gold. If Box B contains gold, which statement is true?\n(A) Statement 1\n(B) Statement 2\n(C) Statement 3\n(D) None can be determined",
+        "answer": "B",
+        "reasoning_type": "exclusive_truth"
+      },
+      {
+        "id": "LOGIQA_B15",
+        "question": "Studies show that countries with more teachers per capita have higher test scores. The education minister concludes we should hire more teachers. What is the strongest objection?\n(A) Some teachers are ineffective\n(B) Wealthier countries can afford both more teachers and better resources\n(C) Test scores don't measure all learning\n(D) Students dislike having more teachers",
+        "answer": "B",
+        "reasoning_type": "third_variable_problem"
+      },
+      {
+        "id": "LOGIQA_B16",
+        "question": "A implies B. B implies C. C implies D. D implies E. Not-E. What can we conclude?\n(A) A, B, C, D are all false\n(B) Only A is false\n(C) We cannot determine anything about A\n(D) A might still be true",
+        "answer": "A",
+        "reasoning_type": "chain_contraposition"
+      },
+      {
+        "id": "LOGIQA_B17",
+        "question": "Some politicians are honest. All honest people are trustworthy. No trustworthy person would deceive voters. Politician X deceived voters. What can we conclude about X?\n(A) X is not honest\n(B) X is not a politician\n(C) X is trustworthy despite appearances\n(D) X was forced to deceive",
+        "answer": "A",
+        "reasoning_type": "sorites_syllogism"
+      },
+      {
+        "id": "LOGIQA_B18",
+        "question": "A survey shows 80% of successful entrepreneurs dropped out of college. Therefore, dropping out of college leads to entrepreneurial success. What is the primary flaw in this reasoning?\n(A) The sample size is too small\n(B) It ignores the base rate of all dropouts who are not successful\n(C) Entrepreneurs might lie about their education\n(D) Success is subjective",
+        "answer": "B",
+        "reasoning_type": "base_rate_neglect"
+      },
+      {
+        "id": "LOGIQA_B19",
+        "question": "In a game, exactly two of these four statements are true: (1) A won, (2) B did not win, (3) C won, (4) D won. A and C cannot both win. B and D cannot both win. Who won?\n(A) A and D\n(B) B and C\n(C) A and B\n(D) C and D",
+        "answer": "A",
+        "reasoning_type": "constraint_logic_puzzle"
+      },
+      {
+        "id": "LOGIQA_B20",
+        "question": "Every person who exercises regularly is healthy. Every person who is healthy is happy. No happy person complains constantly. Tom complains constantly. Which conclusions are valid? I: Tom doesn't exercise regularly. II: Tom is unhealthy. III: Tom is unhappy.\n(A) I only\n(B) I and III only\n(C) I, II, and III\n(D) III only",
+        "answer": "C",
+        "reasoning_type": "multi_step_deduction"
+      }
+    ]
+  }
+}

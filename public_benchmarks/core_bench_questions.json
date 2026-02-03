@@ -1,0 +1,337 @@
+{
+  "benchmark": "CORE-Bench",
+  "description": "Comprehensive Ordered Reasoning Evaluation Benchmark - Multi-dimensional LLM reasoning assessment",
+  "source": "Feyijimi, Taiwo (NeurIPS 2025)",
+  "tier_a": {
+    "name": "Basic",
+    "description": "Foundational reasoning across logical, mathematical, causal, and analogical dimensions",
+    "questions": [
+      {
+        "id": "CORE_A01",
+        "category": "logical_deduction",
+        "question": "Premises: All mammals are warm-blooded. All dogs are mammals.\nQuestion: Are all dogs warm-blooded?",
+        "answer": "yes",
+        "reasoning_type": "syllogism",
+        "difficulty": "easy"
+      },
+      {
+        "id": "CORE_A02",
+        "category": "logical_deduction",
+        "question": "Premises: If it rains, the ground gets wet. The ground is wet.\nQuestion: Did it definitely rain?",
+        "answer": "no",
+        "reasoning_type": "affirming_consequent_fallacy",
+        "difficulty": "medium"
+      },
+      {
+        "id": "CORE_A03",
+        "category": "logical_deduction",
+        "question": "Premises: Either the package was delivered or it was lost. The package was not delivered.\nQuestion: Was the package lost?",
+        "answer": "yes",
+        "reasoning_type": "disjunctive_syllogism",
+        "difficulty": "easy"
+      },
+      {
+        "id": "CORE_A04",
+        "category": "logical_deduction",
+        "question": "Premises: If you study hard, you will pass the exam. You did not study hard.\nQuestion: Can we conclude you will fail the exam?",
+        "answer": "no",
+        "reasoning_type": "denying_antecedent_fallacy",
+        "difficulty": "medium"
+      },
+      {
+        "id": "CORE_A05",
+        "category": "logical_deduction",
+        "question": "Premises: If it snows, the schools close. If the schools close, children stay home.\nQuestion: If it snows, do children stay home?",
+        "answer": "yes",
+        "reasoning_type": "hypothetical_syllogism",
+        "difficulty": "easy"
+      },
+      {
+        "id": "CORE_A06",
+        "category": "math_reasoning",
+        "question": "A store sells apples for $2 each and oranges for $3 each. If Sarah buys 4 apples and 5 oranges, and pays with a $50 bill, how much change does she receive?",
+        "answer": "27",
+        "reasoning_type": "multi_step_arithmetic",
+        "difficulty": "easy"
+      },
+      {
+        "id": "CORE_A07",
+        "category": "math_reasoning",
+        "question": "A train travels at 60 mph for 2 hours, then at 80 mph for 1.5 hours. What is the total distance traveled in miles?",
+        "answer": "240",
+        "reasoning_type": "rate_distance_time",
+        "difficulty": "easy"
+      },
+      {
+        "id": "CORE_A08",
+        "category": "math_reasoning",
+        "question": "If 3 workers can complete a job in 12 days, how many days would it take 4 workers to complete the same job, assuming they work at the same rate?",
+        "answer": "9",
+        "reasoning_type": "inverse_proportion",
+        "difficulty": "medium"
+      },
+      {
+        "id": "CORE_A09",
+        "category": "math_reasoning",
+        "question": "A rectangle has a perimeter of 36 cm. If its length is twice its width, what is the area of the rectangle in square centimeters?",
+        "answer": "72",
+        "reasoning_type": "geometry_algebra",
+        "difficulty": "medium"
+      },
+      {
+        "id": "CORE_A10",
+        "category": "math_reasoning",
+        "question": "A company's profit increased by 20% in the first year and decreased by 10% in the second year. If the original profit was $100,000, what is the profit after two years?",
+        "answer": "108000",
+        "reasoning_type": "percentage_change",
+        "difficulty": "medium"
+      },
+      {
+        "id": "CORE_A11",
+        "category": "causal_reasoning",
+        "question": "A pharmaceutical company tests a new drug. In the treatment group, 30% of patients improved. In the placebo group, 28% of patients improved. The difference is not statistically significant (p=0.42).\nShould we conclude the drug is effective?",
+        "answer": "no",
+        "reasoning_type": "statistical_significance",
+        "difficulty": "medium"
+      },
+      {
+        "id": "CORE_A12",
+        "category": "causal_reasoning",
+        "question": "Observation: Cities with more police officers have higher crime rates.\nConclusion: Police officers cause crime.\nIs this conclusion valid?",
+        "answer": "no",
+        "reasoning_type": "reverse_causation",
+        "difficulty": "easy"
+      },
+      {
+        "id": "CORE_A13",
+        "category": "causal_reasoning",
+        "question": "A study finds that students who eat breakfast score higher on tests. The study controlled for socioeconomic status, sleep hours, and study time.\nCan we conclude that eating breakfast improves test scores?",
+        "answer": "no",
+        "reasoning_type": "unmeasured_confounding",
+        "difficulty": "medium"
+      },
+      {
+        "id": "CORE_A14",
+        "category": "causal_reasoning",
+        "question": "Factory A: 100 widgets tested, 5 defects. Factory B: 1000 widgets tested, 40 defects.\nWhich factory has better quality control?",
+        "answer": "B",
+        "reasoning_type": "rate_comparison",
+        "difficulty": "easy"
+      },
+      {
+        "id": "CORE_A15",
+        "category": "causal_reasoning",
+        "question": "An ice cream shop notices that when ice cream sales increase, drowning incidents also increase.\nDoes ice cream cause drowning?",
+        "answer": "no",
+        "reasoning_type": "confounding_variable",
+        "difficulty": "easy"
+      },
+      {
+        "id": "CORE_A16",
+        "category": "analogical_reasoning",
+        "question": "Complete the analogy: BIRD is to FLY as FISH is to ___?\nOptions: swim, water, scales, ocean",
+        "answer": "swim",
+        "reasoning_type": "action_relation",
+        "difficulty": "easy"
+      },
+      {
+        "id": "CORE_A17",
+        "category": "analogical_reasoning",
+        "question": "Complete the analogy: TEACHER is to STUDENT as DOCTOR is to ___?\nOptions: hospital, medicine, patient, nurse",
+        "answer": "patient",
+        "reasoning_type": "role_relation",
+        "difficulty": "easy"
+      },
+      {
+        "id": "CORE_A18",
+        "category": "analogical_reasoning",
+        "question": "Complete the analogy: CHAPTER is to BOOK as VERSE is to ___?\nOptions: poem, rhyme, stanza, literature",
+        "answer": "poem",
+        "reasoning_type": "part_whole",
+        "difficulty": "medium"
+      },
+      {
+        "id": "CORE_A19",
+        "category": "multi_step_planning",
+        "question": "You need to cross a river with a wolf, a goat, and cabbage using a boat that holds only you and one item. The wolf will eat the goat if left alone, and the goat will eat the cabbage if left alone. What is the minimum number of one-way crossings needed?",
+        "answer": "7",
+        "reasoning_type": "constraint_satisfaction",
+        "difficulty": "hard"
+      },
+      {
+        "id": "CORE_A20",
+        "category": "multi_step_planning",
+        "question": "You have 8 coins that look identical, but one is counterfeit and lighter. Using a balance scale, what is the minimum number of weighings needed to guarantee finding the counterfeit coin?",
+        "answer": "2",
+        "reasoning_type": "optimization",
+        "difficulty": "medium"
+      }
+    ]
+  },
+  "tier_b": {
+    "name": "Advanced",
+    "description": "Expert-level reasoning including modal logic, paradoxes, competition math, and complex causal inference",
+    "questions": [
+      {
+        "id": "CORE_B01",
+        "category": "logical_deduction",
+        "question": "Premises: All philosophers who study ethics consider morality important. Some scientists are philosophers. All who consider morality important debate free will. No one who debates free will ignores consciousness studies.\nQuestion: Can we conclude that some scientists don't ignore consciousness studies?",
+        "answer": "no",
+        "reasoning_type": "undistributed_middle",
+        "difficulty": "hard"
+      },
+      {
+        "id": "CORE_B02",
+        "category": "logical_deduction",
+        "question": "Statement A says 'Statement B is true'. Statement B says 'Statement A is false'.\nCan both statements have consistent truth values?",
+        "answer": "no",
+        "reasoning_type": "paradox_resolution",
+        "difficulty": "expert"
+      },
+      {
+        "id": "CORE_B03",
+        "category": "logical_deduction",
+        "question": "On an island, knights always tell truth and knaves always lie. Person A says 'We are both knaves'.\nIs Person A a knight?",
+        "answer": "no",
+        "reasoning_type": "knights_and_knaves",
+        "difficulty": "hard"
+      },
+      {
+        "id": "CORE_B04",
+        "category": "logical_deduction",
+        "question": "Premises: Necessarily, if P then Q. Possibly P. Necessarily, if Q then R.\nQuestion: Is R possibly true?",
+        "answer": "yes",
+        "reasoning_type": "modal_logic",
+        "difficulty": "expert"
+      },
+      {
+        "id": "CORE_B05",
+        "category": "logical_deduction",
+        "question": "Premises: 90% of A's are B's. 90% of B's are C's. X is an A.\nQuestion: Is it certain that X is a C?",
+        "answer": "no",
+        "reasoning_type": "probabilistic_reasoning",
+        "difficulty": "hard"
+      },
+      {
+        "id": "CORE_B06",
+        "category": "math_reasoning",
+        "question": "What is the remainder when 7^100 is divided by 5?",
+        "answer": "4",
+        "reasoning_type": "modular_arithmetic",
+        "difficulty": "competition"
+      },
+      {
+        "id": "CORE_B07",
+        "category": "math_reasoning",
+        "question": "In how many ways can 5 distinct books be arranged on a shelf if two specific books must always be adjacent?",
+        "answer": "48",
+        "reasoning_type": "combinatorics_constraint",
+        "difficulty": "competition"
+      },
+      {
+        "id": "CORE_B08",
+        "category": "math_reasoning",
+        "question": "A geometric sequence has first term 3 and common ratio 2. What is the sum of the first 8 terms?",
+        "answer": "765",
+        "reasoning_type": "geometric_series",
+        "difficulty": "hard"
+      },
+      {
+        "id": "CORE_B09",
+        "category": "math_reasoning",
+        "question": "If log₂(x) + log₂(x-2) = 3, what is the value of x?",
+        "answer": "4",
+        "reasoning_type": "logarithmic_equations",
+        "difficulty": "hard"
+      },
+      {
+        "id": "CORE_B10",
+        "category": "math_reasoning",
+        "question": "A fair die is rolled twice. What is the probability that the sum is greater than 9? Express as a fraction with denominator 36.",
+        "answer": "6/36",
+        "reasoning_type": "probability",
+        "difficulty": "competition"
+      },
+      {
+        "id": "CORE_B11",
+        "category": "causal_reasoning",
+        "question": "Simpson's Paradox: Treatment A has higher success rate in mild cases (80% vs 70%) AND in severe cases (50% vs 40%). Yet overall, Treatment B has higher success (60% vs 55%). Is it possible for this to be correct?",
+        "answer": "yes",
+        "reasoning_type": "simpsons_paradox",
+        "difficulty": "expert"
+      },
+      {
+        "id": "CORE_B12",
+        "category": "causal_reasoning",
+        "question": "Berkson's Paradox: Among hospitalized patients, disease A and disease B appear negatively correlated. In the general population, they are independent.\nIs the hospital correlation real or spurious?",
+        "answer": "spurious",
+        "reasoning_type": "berksons_paradox",
+        "difficulty": "expert"
+      },
+      {
+        "id": "CORE_B13",
+        "category": "causal_reasoning",
+        "question": "A randomized controlled trial shows Drug X reduces heart attacks by 50% (from 4% to 2% over 5 years). The Absolute Risk Reduction is 2%. What is the Number Needed to Treat (NNT)?",
+        "answer": "50",
+        "reasoning_type": "epidemiological_measures",
+        "difficulty": "hard"
+      },
+      {
+        "id": "CORE_B14",
+        "category": "causal_reasoning",
+        "question": "Survivorship Bias: WWII planes returning from combat showed more bullet holes in the fuselage than the engine. Engineers proposed reinforcing the fuselage.\nIs this the correct recommendation?",
+        "answer": "no",
+        "reasoning_type": "survivorship_bias",
+        "difficulty": "hard"
+      },
+      {
+        "id": "CORE_B15",
+        "category": "causal_reasoning",
+        "question": "Counterfactual: A patient died after receiving treatment. Would withholding treatment have saved them?\nGiven: 80% of untreated patients with this condition die, 60% of treated patients die.\nCan we determine the counterfactual outcome for this specific patient?",
+        "answer": "no",
+        "reasoning_type": "counterfactual_reasoning",
+        "difficulty": "expert"
+      },
+      {
+        "id": "CORE_B16",
+        "category": "analogical_reasoning",
+        "question": "Complete the cross-domain analogy: NATURAL SELECTION is to EVOLUTION as GRADIENT DESCENT is to ___?\nOptions: neural_network, machine_learning, optimization, backpropagation",
+        "answer": "optimization",
+        "reasoning_type": "cross_domain_mechanism",
+        "difficulty": "hard"
+      },
+      {
+        "id": "CORE_B17",
+        "category": "analogical_reasoning",
+        "question": "Complete the higher-order analogy: PARADOX is to LOGIC as SINGULARITY is to ___?\nOptions: physics, mathematics, infinity, space",
+        "answer": "physics",
+        "reasoning_type": "domain_boundary",
+        "difficulty": "hard"
+      },
+      {
+        "id": "CORE_B18",
+        "category": "multi_step_planning",
+        "question": "Tower of Hanoi: What is the minimum number of moves to transfer 5 disks from one peg to another following the rules?",
+        "answer": "31",
+        "reasoning_type": "recursive_planning",
+        "difficulty": "hard"
+      },
+      {
+        "id": "CORE_B19",
+        "category": "multi_step_planning",
+        "question": "You have 12 coins, one is counterfeit (either heavier or lighter). Using a balance scale, what is the minimum number of weighings needed to identify the counterfeit AND determine if it's heavier or lighter?",
+        "answer": "3",
+        "reasoning_type": "information_theory",
+        "difficulty": "expert"
+      },
+      {
+        "id": "CORE_B20",
+        "category": "comprehensive_reasoning",
+        "question": "Logical Meta-Reasoning: A statement says 'This statement cannot be proven within this formal system.' In a consistent formal system that includes basic arithmetic, is this statement true?",
+        "answer": "yes",
+        "reasoning_type": "godel_incompleteness",
+        "difficulty": "expert"
+      }
+    ]
+  }
+}

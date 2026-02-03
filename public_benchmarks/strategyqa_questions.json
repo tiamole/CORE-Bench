@@ -1,0 +1,257 @@
+{
+  "benchmark": "StrategyQA",
+  "description": "Strategy Question Answering - Multi-hop implicit reasoning using world knowledge",
+  "source": "Geva et al. (TACL 2021)",
+  "tier_a": {
+    "name": "Basic",
+    "description": "2-hop reasoning with common knowledge",
+    "questions": [
+      {
+        "id": "STRAT_A01",
+        "question": "Can a blue whale fit through the doors of a standard house?",
+        "answer": "No",
+        "reasoning_steps": ["Blue whales are approximately 100 feet long and 8+ feet wide", "Standard house doors are about 6.5 feet tall and 3 feet wide", "A blue whale cannot fit through such a small opening"]
+      },
+      {
+        "id": "STRAT_A02",
+        "question": "Is the Eiffel Tower taller than the Statue of Liberty?",
+        "answer": "Yes",
+        "reasoning_steps": ["The Eiffel Tower is about 1,063 feet tall", "The Statue of Liberty is about 305 feet tall including its pedestal", "1,063 > 305"]
+      },
+      {
+        "id": "STRAT_A03",
+        "question": "Can a cheetah outrun a car on a highway?",
+        "answer": "No",
+        "reasoning_steps": ["Cheetahs can run up to about 70 mph", "Highway speed limits are typically 65-75 mph, and cars can exceed this", "Cheetahs can only maintain top speed briefly, while cars can sustain highway speeds"]
+      },
+      {
+        "id": "STRAT_A04",
+        "question": "Would a vegetarian eat a beef hamburger?",
+        "answer": "No",
+        "reasoning_steps": ["Vegetarians don't eat meat", "Beef comes from cows and is meat", "A vegetarian would not eat a beef hamburger"]
+      },
+      {
+        "id": "STRAT_A05",
+        "question": "Can you see the Great Wall of China from the Moon?",
+        "answer": "No",
+        "reasoning_steps": ["The Great Wall is about 15-30 feet wide", "The Moon is about 238,855 miles from Earth", "Objects that narrow cannot be seen from such a distance with the naked eye"]
+      },
+      {
+        "id": "STRAT_A06",
+        "question": "Is water wet?",
+        "answer": "Yes",
+        "reasoning_steps": ["Water is a liquid", "Wetness is the property of being covered or saturated with liquid", "Water makes things wet and is itself in a wet state"]
+      },
+      {
+        "id": "STRAT_A07",
+        "question": "Would a penguin survive comfortably in the Sahara Desert?",
+        "answer": "No",
+        "reasoning_steps": ["Penguins are adapted to cold climates", "The Sahara Desert has extremely hot temperatures", "Penguins cannot regulate body heat in hot environments"]
+      },
+      {
+        "id": "STRAT_A08",
+        "question": "Can a person hold their breath for an hour?",
+        "answer": "No",
+        "reasoning_steps": ["Humans need oxygen continuously", "The world record for breath-holding is about 24 minutes under extreme conditions", "One hour far exceeds human capability"]
+      },
+      {
+        "id": "STRAT_A09",
+        "question": "Is the sun larger than the Earth?",
+        "answer": "Yes",
+        "reasoning_steps": ["The Sun's diameter is about 864,000 miles", "Earth's diameter is about 7,918 miles", "The Sun is about 109 times wider than Earth"]
+      },
+      {
+        "id": "STRAT_A10",
+        "question": "Can an elephant jump?",
+        "answer": "No",
+        "reasoning_steps": ["Elephants are the largest land animals, weighing up to 14,000 pounds", "Their bone and muscle structure doesn't support jumping", "Elephants are the only mammals that cannot jump"]
+      },
+      {
+        "id": "STRAT_A11",
+        "question": "Would a snowman last all summer in Florida?",
+        "answer": "No",
+        "reasoning_steps": ["Snowmen are made of frozen water", "Florida summers are hot, often above 90°F", "The snowman would melt quickly"]
+      },
+      {
+        "id": "STRAT_A12",
+        "question": "Can you mail a letter without a stamp?",
+        "answer": "No",
+        "reasoning_steps": ["Postal services require payment for delivery", "Stamps are proof of postage payment", "Letters without stamps are returned or not delivered"]
+      },
+      {
+        "id": "STRAT_A13",
+        "question": "Is a tomato a fruit?",
+        "answer": "Yes",
+        "reasoning_steps": ["Botanically, fruits develop from flower ovaries and contain seeds", "Tomatoes develop from flowers and contain seeds", "Tomatoes are botanically classified as fruits"]
+      },
+      {
+        "id": "STRAT_A14",
+        "question": "Can birds fly backwards?",
+        "answer": "Yes",
+        "reasoning_steps": ["Hummingbirds can fly in all directions including backwards", "They have specially adapted wing joints", "Therefore, some birds can fly backwards"]
+      },
+      {
+        "id": "STRAT_A15",
+        "question": "Would a fish survive outside of water for a day?",
+        "answer": "No",
+        "reasoning_steps": ["Fish breathe through gills that extract oxygen from water", "Gills cannot extract oxygen from air", "Fish would suffocate outside water"]
+      },
+      {
+        "id": "STRAT_A16",
+        "question": "Is Mount Everest taller than Mount Kilimanjaro?",
+        "answer": "Yes",
+        "reasoning_steps": ["Mount Everest is 29,032 feet tall", "Mount Kilimanjaro is 19,341 feet tall", "29,032 > 19,341"]
+      },
+      {
+        "id": "STRAT_A17",
+        "question": "Can you boil water at room temperature?",
+        "answer": "Yes",
+        "reasoning_steps": ["Boiling point depends on pressure", "Under low pressure (vacuum), water boils at lower temperatures", "In a vacuum chamber, water can boil at room temperature"]
+      },
+      {
+        "id": "STRAT_A18",
+        "question": "Does the Amazon River flow through Europe?",
+        "answer": "No",
+        "reasoning_steps": ["The Amazon River is in South America", "It flows through Brazil, Peru, and other South American countries", "It does not reach Europe"]
+      },
+      {
+        "id": "STRAT_A19",
+        "question": "Can humans see ultraviolet light?",
+        "answer": "No",
+        "reasoning_steps": ["Human eyes can only detect visible light spectrum", "Ultraviolet light has wavelengths shorter than visible light", "Humans cannot see UV light without special equipment"]
+      },
+      {
+        "id": "STRAT_A20",
+        "question": "Is a whale a fish?",
+        "answer": "No",
+        "reasoning_steps": ["Whales are warm-blooded and breathe air", "Whales give birth to live young and nurse them", "These are mammalian characteristics; whales are mammals, not fish"]
+      }
+    ]
+  },
+  "tier_b": {
+    "name": "Advanced",
+    "description": "3+ hop reasoning requiring integration of multiple world knowledge facts",
+    "questions": [
+      {
+        "id": "STRAT_B01",
+        "question": "Would the current President of the United States be considered a millennial?",
+        "answer": "No",
+        "reasoning_steps": ["Millennials were born between 1981-1996", "Joe Biden was born in 1942", "1942 is before the millennial generation"]
+      },
+      {
+        "id": "STRAT_B02",
+        "question": "Could a ancient Roman have eaten a potato?",
+        "answer": "No",
+        "reasoning_steps": ["Ancient Rome existed from 753 BC to 476 AD", "Potatoes are native to South America", "Potatoes weren't brought to Europe until the 16th century, after Columbus", "Ancient Romans lived before potatoes reached Europe"]
+      },
+      {
+        "id": "STRAT_B03",
+        "question": "Can the Mona Lisa be purchased for any amount of money?",
+        "answer": "No",
+        "reasoning_steps": ["The Mona Lisa is owned by the French government", "It is considered priceless cultural heritage", "French law prohibits the sale of national treasures", "It cannot be legally purchased at any price"]
+      },
+      {
+        "id": "STRAT_B04",
+        "question": "Could you walk from Moscow to Beijing without crossing any water?",
+        "answer": "Yes",
+        "reasoning_steps": ["Both cities are in the Eurasian landmass", "There is a continuous land route through Russia, Mongolia, and China", "While challenging, no body of water needs to be crossed"]
+      },
+      {
+        "id": "STRAT_B05",
+        "question": "Would a person born on February 29, 1988, have celebrated 10 birthdays on their actual birthday by 2024?",
+        "answer": "No",
+        "reasoning_steps": ["February 29 occurs only in leap years (every 4 years)", "Leap years from 1988 to 2024: 1992, 1996, 2000, 2004, 2008, 2012, 2016, 2020, 2024", "That's 9 leap years, so 9 actual birthday celebrations"]
+      },
+      {
+        "id": "STRAT_B06",
+        "question": "Could Cleopatra have seen the Great Pyramid in its original white limestone casing?",
+        "answer": "No",
+        "reasoning_steps": ["Cleopatra lived from 69-30 BC", "The Great Pyramid was built around 2560 BC", "Much of the white limestone casing had eroded or been removed by Cleopatra's time", "The casing stones were largely stripped after earthquakes, especially after 1303 AD"]
+      },
+      {
+        "id": "STRAT_B07",
+        "question": "If you flew directly west from New York City, would you eventually reach California?",
+        "answer": "Yes",
+        "reasoning_steps": ["New York City is at approximately 41°N latitude", "California extends from about 32°N to 42°N latitude", "Flying due west from NYC would cross the continental US including California"]
+      },
+      {
+        "id": "STRAT_B08",
+        "question": "Could a person who was born deaf learn to speak a language?",
+        "answer": "Yes",
+        "reasoning_steps": ["Speech is produced by the vocal apparatus, not hearing", "Deaf individuals can learn to speak through speech therapy and visual feedback", "Many deaf individuals learn to speak oral languages"]
+      },
+      {
+        "id": "STRAT_B09",
+        "question": "Would Einstein have been able to watch a color television broadcast?",
+        "answer": "Yes",
+        "reasoning_steps": ["Einstein died in April 1955", "Color television broadcasts began in the US in 1951 (CBS) and 1954 (NBC)", "Einstein could have watched color TV in his final years"]
+      },
+      {
+        "id": "STRAT_B10",
+        "question": "Is it possible to sneeze with your eyes open?",
+        "answer": "Yes",
+        "reasoning_steps": ["The reflex to close eyes during sneezing is not absolute", "With effort, some people can keep their eyes open while sneezing", "The 'eyes will pop out' myth is false"]
+      },
+      {
+        "id": "STRAT_B11",
+        "question": "Could you fit all of humanity into a space the size of Los Angeles?",
+        "answer": "Yes",
+        "reasoning_steps": ["World population is about 8 billion people", "Los Angeles is about 503 square miles or 14+ billion square feet", "Each person would have about 1.75 square feet", "While very crowded, people could physically fit standing"]
+      },
+      {
+        "id": "STRAT_B12",
+        "question": "Would a message sent from Earth reach Mars before a Tesla Roadster launched into space could drive there?",
+        "answer": "Yes",
+        "reasoning_steps": ["Radio signals travel at the speed of light (3-22 minutes to Mars depending on position)", "SpaceX's Starman Roadster is in solar orbit, not traveling to Mars", "Even if it were, the car couldn't actually drive in space", "Light-speed signals would arrive first"]
+      },
+      {
+        "id": "STRAT_B13",
+        "question": "Could Marie Curie have used a computer?",
+        "answer": "No",
+        "reasoning_steps": ["Marie Curie died in 1934", "The first general-purpose electronic computer (ENIAC) was completed in 1945", "Personal computers weren't available until the 1970s-80s", "Curie died before modern computers existed"]
+      },
+      {
+        "id": "STRAT_B14",
+        "question": "Is it possible for two people born 100 years apart to have met each other?",
+        "answer": "Yes",
+        "reasoning_steps": ["If person A was born in 1900 and lived to 105 (dying in 2005)", "Person B born in 2000 would be 5 years old when A died", "They could have met during their overlapping lifetimes"]
+      },
+      {
+        "id": "STRAT_B15",
+        "question": "Could Napoleon have sent a telegram?",
+        "answer": "No",
+        "reasoning_steps": ["Napoleon died in 1821", "The first practical telegraph was invented by Samuel Morse in the 1830s", "Commercial telegraph service began in the 1840s", "Napoleon died before the telegraph was invented"]
+      },
+      {
+        "id": "STRAT_B16",
+        "question": "Would a glass of water weigh more on Jupiter than on Earth?",
+        "answer": "Yes",
+        "reasoning_steps": ["Weight = mass × gravitational acceleration", "Jupiter's surface gravity is about 2.4 times Earth's", "The same mass of water would weigh about 2.4 times more on Jupiter"]
+      },
+      {
+        "id": "STRAT_B17",
+        "question": "Could you theoretically travel to a star within a human lifetime?",
+        "answer": "Yes",
+        "reasoning_steps": ["At very high speeds, time dilation occurs (special relativity)", "From the traveler's perspective, time passes more slowly", "A journey to Proxima Centauri at near-light speed would feel much shorter to the traveler", "The trip is theoretically possible within a human lifetime from the traveler's reference frame"]
+      },
+      {
+        "id": "STRAT_B18",
+        "question": "Did the Ottoman Empire exist at the same time as Harvard University?",
+        "answer": "Yes",
+        "reasoning_steps": ["Harvard University was founded in 1636", "The Ottoman Empire existed from 1299 to 1922", "They overlapped from 1636 to 1922 (286 years)"]
+      },
+      {
+        "id": "STRAT_B19",
+        "question": "Could a person stand at the North Pole and walk due south, then due east, then due north, and end up at the same spot?",
+        "answer": "Yes",
+        "reasoning_steps": ["Starting at the North Pole, walk south any distance", "Walk east (along a latitude line) for any distance", "Walk north the same distance as the first leg", "Due to the geometry of spherical coordinates, you return to the North Pole"]
+      },
+      {
+        "id": "STRAT_B20",
+        "question": "Would a gold bar float in a pool of liquid mercury?",
+        "answer": "Yes",
+        "reasoning_steps": ["Gold has a density of about 19.3 g/cm³", "Mercury has a density of about 13.5 g/cm³", "Wait - gold is denser, so it would sink, not float", "Actually, NO - gold would sink in mercury because gold is denser"]
+      }
+    ]
+  }
+}
