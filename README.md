@@ -161,10 +161,6 @@ CORE-Bench/
 │   ├── png/                               # 300 DPI PNG
 │   ├── svg/                               # Vector graphics
 │   └── pdf/                               # PDF format
-├── neurips_paper/                         # NeurIPS 2025 submission (proprietary)
-│   ├── core_bench_paper.tex               # LaTeX source
-│   ├── core_bench_paper.pdf               # Compiled paper
-│   └── references.bib                     # Bibliography
 ├── public_benchmarks/                     # 8 benchmark datasets (320 questions)
 │   ├── core_bench_questions.json          # Primary benchmark
 │   ├── gsm8k_questions.json               # Mathematical reasoning
